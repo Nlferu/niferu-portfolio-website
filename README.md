@@ -1,1 +1,1 @@
-### Preparation for building portfolio page of Niferu/Neftyr
+### Preparation for building portfolio page for Niferu/Neftyr
