@@ -1,11 +1,11 @@
-import Cursor from "@/components/Cursor"
-import Image from "next/image"
-import styles from "../styles/page.module.css"
+import Cursor from "../components/Cursor"
+import Nav from "../components/Nav"
 
 export default function Home() {
     return (
         <>
             <Cursor />
+            <Nav />
             Hi!
         </>
     )

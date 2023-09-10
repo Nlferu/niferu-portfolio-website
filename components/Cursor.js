@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import glow from "../styles/glow.module.css"
+import cursor from "../styles/cursor.module.css"
 
 export default function Cursor() {
     const [position, setPosition] = useState({ x: 0, y: 0 })
@@ -19,8 +19,8 @@ export default function Cursor() {
     }, [])
 
     return (
-        <div className={glow.cursorContainer} style={{ left: `${position.x}px`, top: `${position.y}px` }}>
-            <div className={glow.circle}></div>
+        <div className={cursor.cursorContainer} style={{ left: `${position.x}px`, top: `${position.y}px` }}>
+            <div className={cursor.circle}></div>
         </div>
     )
 }
