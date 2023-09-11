@@ -1,0 +1,56 @@
+.custom {
+    /* Dark mode styles */
+    background: #1f2937; /* Replace with the desired dark mode background color */
+    color: #f3f4f6; /* Replace with the desired dark mode text color */
+    opacity: 0.9; /* Adjust the opacity as needed */
+}
+
+/* Styles for the first <div> */
+.firstColor {
+    background: #fbe2e3;
+    position: absolute;
+    top: -6rem;
+    right: 11rem;
+    z-index: -10;
+    height: 31.25rem;
+    width: 31.25rem;
+    border-radius: 0.25rem;
+    filter: blur(10rem);
+
+    @media (min-width: 640px) {
+        width: 68.75rem;
+    }
+}
+
+/* Styles for the second <div> */
+.secondColor {
+    background: #dbd7fb;
+    position: absolute;
+    top: -1rem;
+    left: -35rem;
+    z-index: -10;
+    height: 31.25rem;
+    width: 50rem;
+    border-radius: 0.25rem;
+    filter: blur(10rem);
+
+    @media (min-width: 640px) {
+        width: 68.75rem;
+    }
+
+    @media (min-width: 768px) {
+        left: -33rem;
+    }
+
+    @media (min-width: 1024px) {
+        left: -28rem;
+    }
+
+    @media (min-width: 1280px) {
+        left: -15rem;
+    }
+
+    @media (min-width: 1536px) {
+        left: -5rem;
+    }
+}

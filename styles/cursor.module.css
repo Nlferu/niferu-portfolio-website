@@ -1,11 +1,16 @@
 .cursorContainer {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 20vw;
+    height: 20vw;
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(29, 78, 216, 0.15);
+
+    @media only screen and (max-width: 40em) {
+        width: 10vw;
+        height: 10vw;
+    }
 }
 
 .circle {

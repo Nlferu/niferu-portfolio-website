@@ -1,11 +1,11 @@
 import Link from "next/link"
-import nav from "../styles/nav.module.css"
+import nav from "@/styles/nav.module.css"
 
 export default function Nav() {
     return (
         <nav className={nav.nav}>
             <Link className={nav.title} href="/">
-                Niferu.
+                Niferu <span className={nav.dot}>.</span>
             </Link>
             <Link className={nav.underline} href="/">
                 Home

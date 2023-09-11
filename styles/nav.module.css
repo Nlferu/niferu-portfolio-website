@@ -1,9 +1,14 @@
 .title {
     margin-right: auto;
-    margin-left: 5vw;
+    margin-left: 5dvw;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: clamp(2rem, 1rem + 2dvw, 7rem); /** Setting (min, step, max) font size while changing screen resolution */
+}
+
+.dot {
+    position: absolute;
+    color: red;
 }
 
 .nav {
@@ -18,17 +23,15 @@
 }
 
 .underline {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
     color: #999;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    font-size: 2vh;
+    margin-left: 1dvw;
+    margin-right: 1dvw;
+    font-size: clamp(1rem, 1rem + 0.5dvw, 3rem);
     cursor: pointer;
     position: relative;
-    display: inline-block;
 }
 
 .underline:hover {
@@ -64,5 +67,5 @@
 
 .underline span {
     position: relative;
-    padding: 0.2vh 0.8vw;
+    padding: 0.2vh 0.8dvw;
 }

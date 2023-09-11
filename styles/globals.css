@@ -7,6 +7,5 @@ body {
 }
 
 html {
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100%; /** Preventing background colour to duplicate */
 }

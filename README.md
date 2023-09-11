@@ -13,6 +13,10 @@
 11. Copyright @2023 by Neftyr | All Rights Reserved (clause) at the bottom of website
 12. Light/Dark version
 
+## Mobile Devices
+
+Min width -> 320px
+
 ## Run development server:
 
 ```bash
