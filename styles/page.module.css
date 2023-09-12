@@ -3,6 +3,7 @@
     background: #1f2937; /* Replace with the desired dark mode background color */
     color: #f3f4f6; /* Replace with the desired dark mode text color */
     opacity: 0.9; /* Adjust the opacity as needed */
+    height: 5000px; /* Adding some height to be able to scroll down */
 }
 
 /* Styles for the first <div> */

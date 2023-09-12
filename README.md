@@ -1,3 +1,7 @@
+# Project Tools:
+
+We will be building it with JavaScript and without Tailwind
+
 # Planning:
 
 1. Partially transparent navBar
@@ -12,8 +16,9 @@
 10. Compatible with phones (wrap navBar if too little space into 3 lines)
 11. Copyright @2023 by Neftyr | All Rights Reserved (clause) at the bottom of website
 12. Light/Dark version
+13. Create unique icon
 
-## Mobile Devices
+## Mobile Devices:
 
 Min width -> 320px
 
@@ -22,3 +27,17 @@ Min width -> 320px
 ```bash
 yarn dev
 ```
+
+### Something Suspicious:
+
+https://ark33.io/
+
+<source src="assets/videos/BTCAddress.webm" type="video/webm">
+<source src="assets/videos/BTCAddress.mp4" type="video/mp4">
+
+3QTqMsBwJbi4KeUogz4v76RQVJ12EPQQXW
+
+-   rename local folders to js and ts
+-   fix changes into current JS branch
+-   create other branch
+-   upload new code to new branch
