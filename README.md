@@ -1,6 +1,6 @@
 # Project Tools:
 
-We will be building it with JavaScript and without Tailwind
+We will be building it with TypeScript and with Tailwind
 
 # Planning:
 
@@ -36,8 +36,3 @@ https://ark33.io/
 <source src="assets/videos/BTCAddress.mp4" type="video/mp4">
 
 3QTqMsBwJbi4KeUogz4v76RQVJ12EPQQXW
-
--   rename local folders to js and ts
--   fix changes into current JS branch
--   create other branch
--   upload new code to new branch
