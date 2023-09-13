@@ -2,7 +2,7 @@
     margin-right: auto;
     margin-left: 5dvw;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: clamp(2rem, 1rem + 2dvw, 7rem); /** Setting (min, step, max) font size while changing screen resolution */
 }
 
@@ -20,6 +20,7 @@
     z-index: 1;
     width: 100%;
     border-bottom: 2px solid rgba(0, 255, 255, 0.1);
+    background: black;
 }
 
 .header {

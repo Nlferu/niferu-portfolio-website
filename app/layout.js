@@ -17,9 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={page.custom}>
-                <div className={page.firstColor}></div>
-                <div className={page.secondColor}></div>
+            <body>
                 <Header />
                 <Cursor />
                 {children}
