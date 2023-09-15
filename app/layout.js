@@ -2,7 +2,6 @@ import "@/styles/globals.css"
 import Header from "@/components/header"
 import Cursor from "@/components/cursor"
 import Footer from "@/components/footer"
-import page from "@/styles/page.module.css"
 
 /**
  * This is our website title and description

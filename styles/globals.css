@@ -1,7 +1,7 @@
 body {
     font-color: #fff;
-    background: linear-gradient(147deg, #222 15%, #000000 90%);
-    overflow: hidden; /** Hiding scrollbar for whole page */
+    background: rgba(0, 0, 0, 0.94);
+    /* overflow: hidden; */ /** Hiding scrollbar for whole page */
     margin: 0; /** Removing Initial Formatting */
     padding: 0; /** Removing Initial Formatting */
 }

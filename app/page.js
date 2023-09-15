@@ -1,3 +1,5 @@
+import body from "@/styles/main.module.css"
+
 export default function Home() {
-    return <p>Hi!</p>
+    return <home className={body.body}>Hi!</home>
 }

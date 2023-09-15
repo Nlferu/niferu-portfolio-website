@@ -3,33 +3,23 @@
 import Link from "next/link"
 import header from "@/styles/header.module.css"
 import { motion } from "framer-motion"
+import { links } from "@/lib/data"
 
 export default function Header() {
     return (
-        <motion.header className={header.nav} initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-            <motion.div initial={{ y: -100, x: "-50%", opacity: 0 }} animate={{ y: 0, x: "-50%", opacity: 1 }}>
+        <header className={header.header}>
+            <motion.div className={header.nav} initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                 <Link className={header.title} href="/">
                     Niferu <span className={header.dot}>.</span>
                 </Link>
-                <Link className={header.underline} href="/">
-                    Home
-                </Link>
-                <Link className={header.underline} href="/">
-                    About
-                </Link>
-                <Link className={header.underline} href="/">
-                    Education
-                </Link>
-                <Link className={header.underline} href="/">
-                    Skills
-                </Link>
-                <Link className={header.underline} href="/">
-                    Contact
-                </Link>
-                <Link className={header.underline} href="/">
-                    Projects
-                </Link>
+                {links.map((link) => (
+                    <motion.li key={link.hash} className={header.li}>
+                        <Link className={header.underline} href={link.hash}>
+                            {link.name}{" "}
+                        </Link>
+                    </motion.li>
+                ))}
             </motion.div>
-        </motion.header>
+        </header>
     )
 }
