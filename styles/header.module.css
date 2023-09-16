@@ -8,7 +8,7 @@
 
 .dot {
     position: absolute;
-    color: red;
+    color: #e68e2e;
 }
 
 .nav {
@@ -18,7 +18,6 @@
     text-decoration: none;
     z-index: 999;
     width: 100%;
-    border-bottom: 2px solid rgba(0, 255, 255, 0.1);
     background: rgba(0, 0, 0, 0.44);
     position: fixed; /* Making navigation bar to stay top even if user scrolls */
     top: 0;

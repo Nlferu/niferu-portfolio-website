@@ -2,6 +2,7 @@ import "@/styles/globals.css"
 import Header from "@/components/header"
 import Cursor from "@/components/cursor"
 import Footer from "@/components/footer"
+import Particle from "@/components/particles"
 
 /**
  * This is our website title and description
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 <Cursor />
+                <Particle />
                 {children}
                 <Footer />
             </body>
