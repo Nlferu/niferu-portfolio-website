@@ -1,3 +1,4 @@
+/** @dev Adding "as const" at the end specifying each object separately (In case we don't have "as const" this objects will be any strings) */
 export const links = [
     {
         name: "Home",

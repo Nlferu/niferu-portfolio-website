@@ -1,9 +1,9 @@
 "use client"
 
-import Link from "next/link"
-import clsx from "clsx"
 import { motion } from "framer-motion"
 import { links } from "@/lib/data"
+import Link from "next/link"
+import clsx from "clsx"
 
 export default function Header() {
     return (
@@ -26,7 +26,7 @@ export default function Header() {
                         >
                             <Link
                                 className={
-                                    "flex w-full items-center justify-center px-1 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
+                                    "flex w-full items-center justify-center px-2 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
                                 }
                                 href={link.hash}
                             >
