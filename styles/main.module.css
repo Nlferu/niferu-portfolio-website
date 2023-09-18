@@ -1,6 +1,7 @@
-/* Experimental -> to be removed */
 .body {
-    position: absolute;
-    top: 4vw;
-    border: 0px solid #8ac007;
+    position: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    align-items: center;
 }

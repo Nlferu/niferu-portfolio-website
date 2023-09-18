@@ -1,6 +1,5 @@
 import "@/styles/globals.css"
 import Header from "@/components/header"
-import Particle from "@/components/particles"
 import Footer from "@/components/footer"
 
 /**
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <Header />
-                <Particle />
                 {children}
                 <Footer />
             </body>
