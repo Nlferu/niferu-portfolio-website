@@ -1,5 +1,10 @@
+.header {
+    position: relative;
+    z-index: 999;
+}
+
 .title {
-    margin-right: auto;
+    position: relative;
     margin-left: 5dvw;
     text-decoration: none;
     color: white;
@@ -11,22 +16,24 @@
     color: #e68e2e;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-decoration: none;
-    z-index: 999;
+.motion {
+    position: fixed; /* Making navigation bar to stay top even if user scrolls */
+    height: 3.5rem; /* Height of navigation bar */
     width: 100%;
     background: rgba(0, 0, 0, 0.44);
-    position: fixed; /* Making navigation bar to stay top even if user scrolls */
     top: 0;
     backdrop-filter: blur(0.1px); /* Making items under navigation bar visible */
 }
 
-.header {
-    position: relative;
-    z-index: 999;
+.nav {
+    display: flex;
+    position: fixed;
+    /* align-items: center; */
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.ul {
 }
 
 .li {
@@ -50,7 +57,7 @@
 }
 
 .underline:hover {
-    color: rgba(50, 255, 255, 0.1);
+    color: #805d39;
     transition: 0.3s;
 }
 
