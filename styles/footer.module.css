@@ -1,9 +1,4 @@
 .footer {
-    position: flex;
-    bottom: 10vw;
-    width: 100%;
-    border: 0px solid #8ac007;
     color: white;
-
     height: 500rem;
 }
