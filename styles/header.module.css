@@ -12,6 +12,10 @@
     font-size: clamp(2rem, 1rem + 2dvw, 7rem); /** Setting (min, step, max) font size while changing screen resolution */
     height: 100%;
     align-items: center;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .dot {
@@ -20,11 +24,16 @@
 
 .motion {
     position: fixed; /* Making navigation bar to stay top even if user scrolls */
+    top: 0;
     height: 3.5rem; /* Height of navigation bar */
     width: 100%;
     background: rgba(0, 0, 0, 0.44);
-    top: 0;
     backdrop-filter: blur(0.1px); /* Making items under navigation bar visible */
+
+    @media (max-width: 500px) {
+        height: 5rem;
+        width: 100%;
+    }
 }
 
 .nav {
@@ -34,10 +43,12 @@
     justify-content: flex-end;
     width: 100%;
     height: 100%;
-    flex-wrap: wrap;
 
-    @media (max-width: 768px) {
-        justify-content: space-between; /* Spread items apart on smaller screens */
+    @media (max-width: 500px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+        row-gap: 0;
     }
 }
 
