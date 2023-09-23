@@ -14,7 +14,8 @@
     align-items: center;
 
     @media (max-width: 500px) {
-        display: none;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 
@@ -31,7 +32,7 @@
     backdrop-filter: blur(0.1px); /* Making items under navigation bar visible */
 
     @media (max-width: 500px) {
-        height: 5rem;
+        height: 4.5rem;
         width: 100%;
     }
 }
@@ -47,6 +48,8 @@
     @media (max-width: 500px) {
         flex-wrap: wrap;
         justify-content: center;
+        height: auto;
+        padding-top: 0.4rem;
         gap: 1.25rem;
         row-gap: 0;
     }
