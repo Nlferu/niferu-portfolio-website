@@ -5,4 +5,5 @@
     top: 3.1vw;
     left: 0;
     transform: translateZ(0px);
+    z-index: -999;
 }
