@@ -16,6 +16,7 @@
     "framer-motion": "^10.16.4",
     "clsx": "^1.2.1",
     "tsparticles": "^2.9.3",
-    "react-tsparticles": "^2.9.3"
+    "react-tsparticles": "^2.9.3",
+    "react-icons": "^4.10.1"
   }
 }

@@ -1,0 +1,9 @@
+.section {
+    max-width: 45rem; /* Setting intro container to be smaller than header */
+    margin: 0 auto; /* Horizontally center an element within its parent container */
+}
+
+.text {
+    color: rgba(203, 207, 204, 1);
+    text-align: center;
+}
