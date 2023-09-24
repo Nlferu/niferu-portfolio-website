@@ -1,6 +1,8 @@
 import Cursor from "@/components/cursor"
 import Particle from "@/components/particles"
 import Intro from "@/components/intro"
+import SectionDivider from "@/components/section-divider"
+import About from "@/components/about"
 
 export default function Home() {
     return (
@@ -8,6 +10,8 @@ export default function Home() {
             <Cursor />
             <Particle />
             <Intro />
+            <SectionDivider />
+            <About />
         </main>
     )
 }
