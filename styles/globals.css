@@ -1,5 +1,4 @@
 body {
-    font-color: #fff;
     background: rgba(0, 0, 0, 0.94);
     /* overflow: hidden; */ /** Hiding scrollbar for whole page */
     margin: 0; /** Removing Initial Formatting */
@@ -7,5 +6,5 @@ body {
 }
 
 html {
-    min-height: 100%; /** Preventing background colour to duplicate */
+    scroll-behavior: smooth; /* Enabling smooth scrolling globally */
 }

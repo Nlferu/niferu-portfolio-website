@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 export default function About() {
     return (
         <motion.section className={about.section} initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.175 }} id="about">
-            <SectionHeading>About me</SectionHeading>
+            <SectionHeading>About Me</SectionHeading>
             <p className={about.text}>
                 I've spent past 7 years mastering finance industry by working for some of the top American banks in investment sector and trading various
                 markets on my own. Since mid of 2020 I have started my programming journey from taking beginner Java course, after which I moved into

@@ -10,7 +10,7 @@ export default function Header() {
         <header className={header.header}>
             <motion.div className={header.motion} initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                 <nav className={header.nav}>
-                    <Link className={header.title} href="/">
+                    <Link className={header.title} href="/#home">
                         Niferu <span className={header.dot}>.</span>
                     </Link>
                     {links.map((link) => (

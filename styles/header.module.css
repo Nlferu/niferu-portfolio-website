@@ -24,7 +24,6 @@
 }
 
 .motion {
-    display: flex;
     position: fixed; /* Making navigation bar to stay top even if user scrolls */
     top: 0;
     height: 3.5rem; /* Height of navigation bar */
@@ -40,7 +39,7 @@
 
 .nav {
     display: flex;
-    position: fixed;
+    /* position: relative; */
     align-items: center;
     justify-content: flex-end;
     width: 100%;
@@ -61,6 +60,7 @@
 }
 
 .underline {
+    position: relative;
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
@@ -69,7 +69,6 @@
     margin-right: 1dvw;
     font-size: clamp(1rem, 1rem + 0.5dvw, 3rem);
     cursor: pointer;
-    position: relative;
 }
 
 .underline:hover {

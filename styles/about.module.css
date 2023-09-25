@@ -1,9 +1,11 @@
 .section {
     max-width: 45rem; /* Setting intro container to be smaller than header */
     margin: 0 auto; /* Horizontally center an element within its parent container */
+    scroll-margin-top: 6rem; /* Ensure "Section Title" is below header */
 }
 
 .text {
     color: rgba(203, 207, 204, 1);
     text-align: center;
+    line-height: 1.5rem;
 }

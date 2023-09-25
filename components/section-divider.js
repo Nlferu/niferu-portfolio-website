@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import section from "@/styles/section-div.module.css"
+import section from "@/styles/section-divider.module.css"
 import { motion } from "framer-motion"
 
 export default function SectionDivider() {
