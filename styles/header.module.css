@@ -24,6 +24,7 @@
 }
 
 .motion {
+    display: flex;
     position: fixed; /* Making navigation bar to stay top even if user scrolls */
     top: 0;
     height: 3.5rem; /* Height of navigation bar */

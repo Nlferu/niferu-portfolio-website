@@ -1,5 +1,5 @@
 .body {
-    position: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 7rem;
