@@ -1,11 +1,12 @@
 import React from "react"
 import SectionHeading from "./section-heading"
 import Project from "./project"
+import project from "@/styles/project.module.css"
 import { projectsData } from "@/lib/data"
 
 export default function Projects() {
     return (
-        <section id="projects">
+        <section className={project.projects} id="projects">
             <SectionHeading>My Projects</SectionHeading>
             <div>
                 {projectsData.map((project, index) => (

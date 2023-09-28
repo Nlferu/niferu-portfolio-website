@@ -1,0 +1,135 @@
+.projects {
+    scroll-margin-top: 6rem;
+}
+
+.motion {
+    margin-bottom: 3rem;
+}
+
+.section {
+    /* border: 2px solid red; */
+
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(37, 32, 35, 0.4);
+    max-width: 50rem;
+    height: 19.5rem;
+    border-width: 1px;
+    border-color: rgba(245, 40, 145, 0.8);
+    border-radius: 0.5rem;
+
+    transition: background-color 0.3s;
+}
+
+.section:hover {
+    background-color: rgba(70, 78, 85, 0.61);
+}
+
+.div {
+    /* TMP */
+    /* border: 2px solid orange; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 80%;
+    max-width: 70%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
+    padding-left: 2.5rem;
+    padding-right: 0.5rem;
+    margin-left: 22.5rem;
+}
+
+.h3 {
+    color: rgb(255 255 255 / 0.9);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.p {
+    color: rgb(255 255 255 / 0.7);
+    line-height: 1.625;
+    margin-top: 0.5rem;
+}
+
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    gap: 0.5rem;
+}
+
+.li {
+    display: flex;
+    border-radius: 9999px;
+    color: rgb(255 255 255 / 0.7);
+    background-color: rgb(0 0 0 / 0.7);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.image {
+    position: absolute;
+    display: block;
+    object-fit: scale-down;
+
+    top: 2rem;
+    right: -10rem;
+    width: 25.25rem;
+    height: 70%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
+    transition: transform 0.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+
+    left: -4rem;
+}
+
+.section:hover .image {
+    transform: rotate(-2deg) translateX(-3px) translateY(-3px) scale(1.25);
+}
+
+div:nth-child(even) .div {
+    margin-right: 20.5rem;
+    margin-left: 0rem;
+    /* border: 2px solid red; */
+}
+
+div:nth-child(odd) .div {
+    margin-right: 0rem;
+    margin-left: 22.5rem;
+    /* border: 2px solid blue; */
+}
+
+/* Apply styles to even-indexed images */
+div:nth-child(even) .image {
+    margin-right: 2rem;
+    left: initial;
+    /* border: 2px solid red; */
+}
+
+/* Apply styles to even-indexed images */
+div:nth-child(even):hover .image {
+    /* border: 2px solid orange; */
+}
+
+/* Apply styles to odd-indexed images */
+div:nth-child(odd) .image {
+    margin-left: -5rem;
+    right: initial;
+    /* border: 2px solid blue; */
+}
+
+div:nth-child(odd):hover .image {
+    transform: rotate(2deg) translateX(-3px) translateY(-3px) scale(1.25);
+    /* border: 2px solid black; */
+}
