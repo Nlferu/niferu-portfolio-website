@@ -12,7 +12,7 @@
     overflow: hidden;
     position: relative;
     background-color: rgba(37, 32, 35, 0.4);
-    max-width: 50rem;
+    max-width: 45rem;
     height: 19.5rem;
     border-width: 1px;
     border-color: rgba(245, 40, 145, 0.8);
@@ -89,47 +89,48 @@
     border-top-right-radius: 0.5rem;
 
     /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
-    transition: transform 0.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+    transition: transform 0.55s cubic-bezier(0.4, 2.1, 0.7, 1);
 
     left: -4rem;
 }
 
 .section:hover .image {
-    transform: rotate(-2deg) translateX(-3px) translateY(-3px) scale(1.25);
+    transform: rotate(2deg) translateX(-3px) translateY(-3px) scale(1.25);
 }
 
 div:nth-child(even) .div {
-    margin-right: 20.5rem;
-    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-left: 22.5rem;
+
     /* border: 2px solid red; */
 }
 
 div:nth-child(odd) .div {
-    margin-right: 0rem;
-    margin-left: 22.5rem;
+    margin-right: 20.5rem;
+    margin-left: 0rem;
+
     /* border: 2px solid blue; */
 }
 
-/* Apply styles to even-indexed images */
 div:nth-child(even) .image {
-    margin-right: 2rem;
-    left: initial;
+    margin-left: -4rem;
+    right: initial;
+
     /* border: 2px solid red; */
 }
 
-/* Apply styles to even-indexed images */
+div:nth-child(odd) .image {
+    margin-left: 28rem;
+    left: initial;
+
+    /* border: 2px solid blue; */
+}
+
 div:nth-child(even):hover .image {
     /* border: 2px solid orange; */
 }
 
-/* Apply styles to odd-indexed images */
-div:nth-child(odd) .image {
-    margin-left: -5rem;
-    right: initial;
-    /* border: 2px solid blue; */
-}
-
 div:nth-child(odd):hover .image {
-    transform: rotate(2deg) translateX(-3px) translateY(-3px) scale(1.25);
+    transform: rotate(-2deg) translateX(-3px) translateY(-3px) scale(1.25);
     /* border: 2px solid black; */
 }

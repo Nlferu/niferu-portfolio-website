@@ -49,7 +49,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     transition: transform 0.3s cubic-bezier(0.4, 2.1, 0.7, 1);
-    transition-duration: 150ms;
+    transition-duration: 250ms;
 }
 
 .button:hover {
