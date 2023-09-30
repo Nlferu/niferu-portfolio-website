@@ -89,13 +89,13 @@
     border-top-right-radius: 0.5rem;
 
     /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
-    transition: transform 0.55s cubic-bezier(0.4, 2.1, 0.7, 1);
+    transition: transform 1.3s cubic-bezier(0.4, 2.1, 0.7, 1);
 
     left: -4rem;
 }
 
 .section:hover .image {
-    transform: rotate(2deg) translateX(-3px) translateY(-3px) scale(1.25);
+    transform: rotate(2deg) translateX(-3px) translateY(-3px) scale(1.15);
 }
 
 div:nth-child(even) .div {
@@ -131,6 +131,6 @@ div:nth-child(even):hover .image {
 }
 
 div:nth-child(odd):hover .image {
-    transform: rotate(-2deg) translateX(-3px) translateY(-3px) scale(1.25);
+    transform: rotate(-2deg) translateX(-3px) translateY(-3px) scale(1.1);
     /* border: 2px solid black; */
 }
