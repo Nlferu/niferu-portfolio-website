@@ -28,8 +28,8 @@
     top: 0;
     height: 3.5rem; /* Height of navigation bar */
     width: 100%;
-    background: rgba(0, 0, 0, 0.44);
-    backdrop-filter: blur(0.1px); /* Making items under navigation bar visible */
+    background: rgba(0, 0, 0, 0.66);
+    backdrop-filter: blur(1.2px); /* Making items under navigation bar visible */
 
     @media (max-width: 500px) {
         height: 4.5rem;

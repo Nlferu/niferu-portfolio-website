@@ -7,7 +7,7 @@
 }
 
 .section {
-    /* border: 2px solid red; */
+    border: 2px solid black !important;
 
     overflow: hidden;
     position: relative;
@@ -19,6 +19,18 @@
     border-radius: 0.5rem;
 
     transition: background-color 0.3s;
+
+    @media (max-width: 750px) {
+        transform: scale(0.8);
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+    }
+
+    @media (max-width: 600px) {
+        transform: scale(0.6);
+        margin-top: -4rem;
+        margin-bottom: -8rem;
+    }
 }
 
 .section:hover {
@@ -48,12 +60,20 @@
     line-height: 2rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
+
+    @media (max-width: 680px) {
+        text-align: center;
+    }
 }
 
 .p {
     color: rgb(255 255 255 / 0.7);
     line-height: 1.625;
     margin-top: 0.4rem;
+
+    @media (max-width: 680px) {
+        text-align: center;
+    }
 }
 
 .ul {
@@ -61,6 +81,10 @@
     flex-wrap: wrap;
     padding-left: 0px;
     gap: 0.5rem;
+
+    @media (max-width: 680px) {
+        justify-content: center;
+    }
 }
 
 .li {
@@ -97,6 +121,14 @@
     transition: transform 0.3s cubic-bezier(0, 0, 1, 1);
 
     left: -4rem;
+
+    @media (max-width: 680px) {
+        display: none;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+    }
 }
 
 .section:hover .image {
@@ -108,6 +140,15 @@ div:nth-child(even) .div {
     margin-left: 22.5rem;
 
     /* border: 2px solid red; */
+
+    @media (max-width: 680px) {
+        padding-right: 10rem;
+        min-width: 90%;
+        min-height: 80%;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 div:nth-child(odd) .div {

@@ -19,6 +19,13 @@ We will be building it with JavaScript and without Tailwind
 13. Create unique icon
 14. Self writing who am I
 
+# ISSUES:
+
+-   When resolution < 500px:
+
+1. Content doesn't center well (projects boxes)
+2. Switch scale into simply smaller boxes, text doesnt fill boxes well to fix
+
 ## Mobile Devices:
 
 Min width -> 320px
