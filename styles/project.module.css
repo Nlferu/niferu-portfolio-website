@@ -47,12 +47,13 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 .p {
     color: rgb(255 255 255 / 0.7);
     line-height: 1.625;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
 }
 
 .ul {
@@ -89,7 +90,11 @@
     border-top-right-radius: 0.5rem;
 
     /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
-    transition: transform 1.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+
+    /* Bounce Effect */
+    //transition: transform 1.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+    /* No Bounce Effect */
+    transition: transform 0.3s cubic-bezier(0, 0, 1, 1);
 
     left: -4rem;
 }

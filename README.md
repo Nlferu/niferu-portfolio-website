@@ -17,6 +17,7 @@ We will be building it with JavaScript and without Tailwind
 11. Copyright @2023 by Neftyr | All Rights Reserved (clause) at the bottom of website
 12. Light/Dark version
 13. Create unique icon
+14. Self writing who am I
 
 ## Mobile Devices:
 
