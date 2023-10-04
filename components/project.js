@@ -1,16 +1,17 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import project from "@/styles/project.module.css"
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-export default function Project({ title, description, tags, imageUrl }) {
+export default function Project({ title, description, tags, imageUrl, href }) {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll({ target: ref, offset: ["0 1", "1.33 1"] })
 
     const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
-    const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.4, 1])
+    const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.3, 1])
 
     return (
         <motion.div
@@ -33,8 +34,9 @@ export default function Project({ title, description, tags, imageUrl }) {
                         ))}
                     </ul>
                 </div>
-
-                <Image className={project.image} src={imageUrl} alt="Project I worked on" quality={95} />
+                <Link href={href} target="_blank">
+                    <Image className={project.image} src={imageUrl} alt="Project I worked on" quality={95} />
+                </Link>
             </section>
         </motion.div>
     )

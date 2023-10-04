@@ -2,10 +2,14 @@
 
 import Link from "next/link"
 import header from "@/styles/header.module.css"
+import clsx from "clsx" // Adding conditional styles
 import { motion } from "framer-motion"
 import { links } from "@/lib/data"
+import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Header() {
+    const { activeSection, setActiveSection } = useActiveSectionContext()
+
     return (
         <header className={header.header}>
             <motion.div className={header.motion} initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
@@ -15,8 +19,24 @@ export default function Header() {
                     </Link>
                     {links.map((link) => (
                         <li key={link.hash} className={header.li}>
-                            <Link className={header.underline} href={link.hash}>
-                                {link.name}{" "}
+                            <Link
+                                className={clsx(header.underline, { [header.setAct]: activeSection === link.name })}
+                                href={link.hash}
+                                onClick={() => setActiveSection(link.name)}
+                            >
+                                {link.name}
+
+                                {link.name === activeSection && (
+                                    <motion.span
+                                        className={header.box}
+                                        layoutId="activeSection"
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 380,
+                                            damping: 30,
+                                        }}
+                                    ></motion.span>
+                                )}
                             </Link>
                         </li>
                     ))}

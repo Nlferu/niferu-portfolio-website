@@ -1,4 +1,5 @@
 import "@/styles/globals.css"
+import ActiveSectionContextProvider from "@/context/active-section-context"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <Header />
-                {children}
-                <Footer />
+                <ActiveSectionContextProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </ActiveSectionContextProvider>
             </body>
         </html>
     )

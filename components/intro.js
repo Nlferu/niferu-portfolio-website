@@ -1,16 +1,30 @@
 "use client"
 
 import Image from "next/image"
-import React from "react"
+import React, { useEffect } from "react"
 import intro from "@/styles/intro.module.css"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
+import { useInView } from "react-intersection-observer"
+import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Intro() {
+    const { ref, inView } = useInView({
+        /** @dev If 50% of content is in view bool will be true */
+        threshold: 0.5,
+    })
+    const { setActiveSection } = useActiveSectionContext()
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection("Home")
+        }
+    }, [inView, setActiveSection])
+
     return (
-        <section className={intro.section}>
+        <section className={intro.section} ref={ref} id="home">
             <div className={intro.position}>
                 <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.3 }}>
                     <Image className={intro.image} src="/niferu.jpg" alt="Niferu" height="200" width="200" quality="95" priority={true} />

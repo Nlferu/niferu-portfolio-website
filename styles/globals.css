@@ -1,8 +1,8 @@
 body {
     background: rgba(0, 0, 0, 0.94);
-    /* overflow: hidden; */ /** Hiding scrollbar for whole page */
-    margin: 0; /** Removing Initial Formatting */
-    padding: 0; /** Removing Initial Formatting */
+    /* overflow: hidden; */ /* Hiding scrollbar for whole page */
+    margin: 0; /* Removing Initial Formatting */
+    padding: 0; /* Removing Initial Formatting */
 }
 
 html {

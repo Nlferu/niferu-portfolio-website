@@ -76,6 +76,22 @@
     transition: 0.3s;
 }
 
+.setAct {
+    color: #805d39;
+}
+
+.box {
+    display: flex;
+    position: absolute;
+    background-color: rgba(51, 42, 47, 0.8);
+    border-radius: 9999px;
+    z-index: -999;
+    height: 90%;
+    width: 85%;
+    bottom: 2rem;
+    right: 0.6rem;
+}
+
 .underline::before,
 .underline::after {
     content: "";
