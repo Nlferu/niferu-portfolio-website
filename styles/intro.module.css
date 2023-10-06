@@ -1,6 +1,7 @@
 .section {
     max-width: 45rem; /* Setting intro container to be smaller than header */
     margin: 0 auto; /* Horizontally center an element within its parent container */
+    scroll-margin-top: 15rem; /* Ensure We Go To Top */
 }
 
 .position {

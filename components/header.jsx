@@ -8,7 +8,7 @@ import { links } from "@/lib/data"
 import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Header() {
-    const { activeSection, setActiveSection } = useActiveSectionContext()
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
         <header className={header.header}>
@@ -22,7 +22,10 @@ export default function Header() {
                             <Link
                                 className={clsx(header.underline, { [header.setAct]: activeSection === link.name })}
                                 href={link.hash}
-                                onClick={() => setActiveSection(link.name)}
+                                onClick={() => {
+                                    setActiveSection(link.name)
+                                    setTimeOfLastClick(Date.now())
+                                }}
                             >
                                 {link.name}
 

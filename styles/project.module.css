@@ -3,6 +3,7 @@
 }
 
 .motion {
+    margin-top: 3.5rem;
     margin-bottom: 3rem;
 }
 
@@ -79,6 +80,7 @@
 .ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-left: 0px;
     gap: 0.5rem;
 
@@ -107,18 +109,17 @@
     object-fit: fit;
 
     top: 3rem;
+    left: -7rem;
     width: 29.25rem;
     height: 69%;
     border-radius: 0.5rem;
-
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 
     /* Bounce Effect */
-    //transition: transform 1.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+    /* transition: transform 1.3s cubic-bezier(0.4, 2.1, 0.7, 1); */
+
     /* No Bounce Effect */
     transition: transform 0.3s cubic-bezier(0, 0, 1, 1);
-
-    left: -7rem;
 
     @media (max-width: 680px) {
         display: none;

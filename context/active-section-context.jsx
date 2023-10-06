@@ -7,6 +7,7 @@ const ActiveSectionContext = createContext(null)
 /** @dev Component below will keep track of the state */
 export default function ActiveSectionContextProvider({ children }) {
     const [activeSection, setActiveSection] = useState("Home")
+    /** @dev We need to keep track of this to disable the observer temporarily when user clicks on a link */
     const [timeOfLastClick, setTimeOfLastClick] = useState(0)
 
     return (
