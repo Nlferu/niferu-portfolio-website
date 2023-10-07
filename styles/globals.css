@@ -7,4 +7,5 @@ body {
 
 html {
     scroll-behavior: smooth; /* Enabling smooth scrolling globally */
+    --line-color: #805d39;
 }

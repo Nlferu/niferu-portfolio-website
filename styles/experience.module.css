@@ -6,3 +6,28 @@
         margin-top: 3rem;
     }
 }
+
+.title {
+    margin-top: -0.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.location {
+    margin-top: 0 !important;
+    font-weight: 400;
+    color: #805d39;
+}
+
+.desc {
+    margin-top: 0.25rem !important;
+    font-weight: 400 !important;
+    color: white;
+}
+
+.ram {
+    background: red;
+    border: 10px solid red;
+    color: black;
+}
