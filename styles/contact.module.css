@@ -1,0 +1,122 @@
+.section {
+    scroll-margin-top: 6rem; /* Ensure "Section Title" is below header */
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    width: min(100%, 38rem); /* Base value for big viewports it will be 38 rem and for all smaller than 38 rem it will be 100% to fit screen */
+    text-align: center;
+
+    @media (max-width: 680px) {
+        margin-top: 3rem;
+    }
+}
+
+.info {
+    color: rgb(255 255 255 / 0.8);
+}
+
+.mail {
+    text-decoration-line: underline;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    color: black;
+
+    justify-content: flex-end;
+}
+
+.input {
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 0.8);
+    border: 2px solid white;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.textarea {
+    height: 13rem;
+    padding: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 0.8);
+    border: 2px solid white;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    color: #999;
+    font-size: 0.95rem;
+
+    background: rgba(0, 0, 0, 0.44);
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    gap: 0.5rem;
+    outline: 2px solid transparent;
+
+    width: 20%;
+    align-self: center;
+
+    transition: transform 0.3s cubic-bezier(0.4, 2.1, 0.7, 1);
+    transition-duration: 250ms;
+}
+
+.submitButton:hover {
+    color: #805d39;
+    font-weight: 600;
+    background-color: rgba(27, 29, 23, 0.8);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.submitButton:active {
+    transform: scale(1.05);
+}
+
+.sbutton {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sbutton:hover {
+    transform: scale(1.1);
+}
+
+.sbutton:active {
+    transform: scale(1.1);
+}
+
+.submitButton:hover .icon {
+    transform: translateX(0.25rem) translateY(-0.25rem);
+    transition: transform 0.3s ease;
+}
+
+/* Slowing down animation on stop hovering */
+.submitButton .icon {
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+}

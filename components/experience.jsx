@@ -11,7 +11,8 @@ export default function Experience() {
     return (
         <section className={expStyle.section} id="experience">
             <SectionHeading>My Experience</SectionHeading>
-            <VerticalTimeline lineColor="">
+            {/* We are setting lineColor in globals.css to avoid errors in console */}
+            <VerticalTimeline lineColor="" animate={true}>
                 {experienceData.map((item, index) => (
                     <React.Fragment key={index}>
                         <VerticalTimelineElement

@@ -1,4 +1,9 @@
 .footer {
+    scroll-margin-top: 6rem; /* Ensure "Section Title" is below header */
+    margin-top: 5rem;
+
+    @media (max-width: 680px) {
+        margin-top: 3rem;
+    }
     color: white;
-    height: 500rem;
 }

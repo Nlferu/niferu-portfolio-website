@@ -1,7 +1,9 @@
 import "@/styles/globals.css"
 import ActiveSectionContextProvider from "@/context/active-section-context"
 import Header from "@/components/header"
-import Footer from "@/components/footer"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
 
 /**
  * This is our website title and description
@@ -16,11 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
+            <body className={inter.className}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}
-                    <Footer />
                 </ActiveSectionContextProvider>
             </body>
         </html>
