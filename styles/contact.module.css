@@ -70,6 +70,10 @@
     color: #999;
     font-size: 0.95rem;
 
+    @media (max-width: 600px) {
+        font-size: 0.7rem;
+    }
+
     background: rgba(0, 0, 0, 0.44);
     border: 1px solid transparent;
     border-radius: 9999px;
