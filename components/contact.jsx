@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export default function Contact() {
     return (
-        <motion.section className={contactStyle.section} id="contact">
+        <motion.section className={contactStyle.section} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} id="contact">
             <SectionHeading>Contact Me</SectionHeading>
             <p className={contactStyle.info}>
                 Please contact me directly at{" "}
