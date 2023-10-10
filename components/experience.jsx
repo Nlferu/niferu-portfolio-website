@@ -6,10 +6,13 @@ import SectionHeading from "./section-heading"
 import "react-vertical-timeline-component/style.min.css"
 import { experienceData } from "@/lib/data"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
+import { useSectionInView } from "@/lib/hooks"
 
 export default function Experience() {
+    const { ref } = useSectionInView("Experience", 0.7)
+
     return (
-        <section className={expStyle.section} id="experience">
+        <section className={expStyle.section} ref={ref} id="experience">
             <SectionHeading>My Experience</SectionHeading>
             {/* We are setting lineColor in globals.css to avoid errors in console */}
             <VerticalTimeline lineColor="" animate={true}>
