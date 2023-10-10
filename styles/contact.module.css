@@ -34,7 +34,7 @@
     padding-right: 1rem;
     border-radius: 0.5rem;
     background: rgb(255 255 255 / 0.8);
-    border: 2px solid white;
+    border: 0px solid white;
 
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,6 +44,10 @@
     outline-offset: 2px;
 }
 
+.input:focus {
+    outline: 2px solid #805d39;
+}
+
 .textarea {
     height: 13rem;
     padding: 1rem;
@@ -51,7 +55,7 @@
     padding-right: 0.75rem;
     border-radius: 0.5rem;
     background: rgb(255 255 255 / 0.8);
-    border: 2px solid white;
+    border: 0px solid white;
 
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -62,6 +66,10 @@
 
     outline: 2px solid transparent;
     outline-offset: 2px;
+}
+
+.textarea:focus {
+    outline: 2px solid #805d39;
 }
 
 .submitButton {
