@@ -1,10 +1,13 @@
+"use client"
+
 import SectionHeading from "./section-heading"
 import contactStyle from "@/styles/contact.module.css"
 import { FaPaperPlane } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 export default function Contact() {
     return (
-        <section className={contactStyle.section} id="contact">
+        <motion.section className={contactStyle.section} id="contact">
             <SectionHeading>Contact Me</SectionHeading>
             <p className={contactStyle.info}>
                 Please contact me directly at{" "}
@@ -21,6 +24,6 @@ export default function Contact() {
                     Submit <FaPaperPlane className={contactStyle.icon} />{" "}
                 </button>
             </form>
-        </section>
+        </motion.section>
     )
 }
