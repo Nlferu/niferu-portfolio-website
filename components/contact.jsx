@@ -4,10 +4,20 @@ import SectionHeading from "./section-heading"
 import contactStyle from "@/styles/contact.module.css"
 import { FaPaperPlane } from "react-icons/fa"
 import { motion } from "framer-motion"
+import { useSectionInView } from "@/lib/hooks"
 
 export default function Contact() {
+    const { ref } = useSectionInView("Contact", 1)
+
     return (
-        <motion.section className={contactStyle.section} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} id="contact">
+        <motion.section
+            className={contactStyle.section}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            ref={ref}
+            id="contact"
+        >
             <SectionHeading>Contact Me</SectionHeading>
             <p className={contactStyle.info}>
                 Please contact me directly at{" "}
