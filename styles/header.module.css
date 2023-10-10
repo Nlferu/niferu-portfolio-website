@@ -82,15 +82,15 @@
 }
 
 .box {
+    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
 
-    background-color: rgba(51, 42, 47, 0.8);
-    border-radius: 9999px;
-    z-index: -999;
-    /* Initially, set the width to 0 */
-    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add transition for width and background-color */
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(159, 137, 94, 0.8);
+
+    transition: width 0.3s ease-in-out;
+    width: 100%;
 }
 
 .underline::before,
@@ -117,9 +117,4 @@
 .underline:hover::before,
 .underline:hover::after {
     width: 100%;
-}
-
-.underline span {
-    position: relative;
-    padding: 0.2vh 0.8dvw;
 }
