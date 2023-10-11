@@ -8,9 +8,11 @@ import { motion } from "framer-motion"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { useSectionInView } from "@/lib/hooks"
+import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5)
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
         <section className={intro.section} ref={ref} id="home">
@@ -32,7 +34,14 @@ export default function Intro() {
                     delay: 0.1,
                 }}
             >
-                <Link className={intro.button} href="#contact">
+                <Link
+                    className={intro.button}
+                    href="#contact"
+                    onClick={() => {
+                        setActiveSection("Contact")
+                        setTimeOfLastClick(Date.now())
+                    }}
+                >
                     Contact me here <BsArrowRight className={intro.arrow} />
                 </Link>
                 <a className={intro.button} href="/CV.pdf" download>
