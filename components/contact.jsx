@@ -32,7 +32,8 @@ export default function Contact() {
             <form
                 className={contactStyle.form}
                 action={async (formData) => {
-                    await sendEmail(formData)
+                    const { data, error } = await sendEmail(formData)
+                    console.log(error)
                 }}
             >
                 <input className={contactStyle.input} name="senderEmail" type="email" required maxLength={100} placeholder="Your email" />
