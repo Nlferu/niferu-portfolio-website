@@ -25,7 +25,7 @@ We will be building it with JavaScript and without Tailwind
 
 1. Content doesn't center well (projects boxes)
 2. Switch scale into simply smaller boxes, text doesnt fill boxes well to fix
-3. Adjust frame to project image (box-shadow)
+3. Error message from "textarea" is popping on button -> to fix
 
 ## Mobile Devices:
 

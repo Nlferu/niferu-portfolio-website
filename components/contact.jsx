@@ -1,10 +1,12 @@
 "use client"
 
+import React from "react"
 import SectionHeading from "./section-heading"
 import contactStyle from "@/styles/contact.module.css"
 import { FaPaperPlane } from "react-icons/fa"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
+import { sendEmail } from "@/actions/sendEmail"
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact", 1)
@@ -27,9 +29,15 @@ export default function Contact() {
                 or through this form.
             </p>
 
-            <form className={contactStyle.form}>
-                <input className={contactStyle.input} type="email" placeholder="Your email" />
-                <textarea className={contactStyle.textarea} placeholder="Your message" />
+            <form
+                className={contactStyle.form}
+                action={async (formData) => {
+                    await sendEmail(formData)
+                }}
+            >
+                <input className={contactStyle.input} name="senderEmail" type="email" required maxLength={100} placeholder="Your email" />
+                <textarea className={contactStyle.textarea} name="message" required maxLength={5000} placeholder="Your message" />
+
                 <button className={`${contactStyle.submitButton} ${contactStyle.sbutton}`} type="submit">
                     Submit <FaPaperPlane className={contactStyle.icon} />{" "}
                 </button>
