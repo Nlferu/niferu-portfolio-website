@@ -15,7 +15,7 @@ export const metadata = {
 }
 
 /** This below will be adding below stuff to all of our website pages */
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             {/* <body className={`${inter.className} bg-gray-500 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}> */}

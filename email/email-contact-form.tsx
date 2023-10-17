@@ -2,7 +2,12 @@ import React from "react"
 import emailStyle from "@/styles/email.module.css"
 import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Text } from "@react-email/components"
 
-export default function EmailContactForm({ message, senderEmail }) {
+type ContactFormEmailProps = {
+    message: string
+    senderEmail: string
+}
+
+export default function EmailContactForm({ message, senderEmail }: ContactFormEmailProps) {
     return (
         <Html>
             <Head />

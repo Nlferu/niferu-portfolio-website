@@ -1,2 +1,0 @@
-"debug": "^4.3.4",
-"supports-color": "8.1.1",

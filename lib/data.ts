@@ -31,7 +31,7 @@ export const links = [
         name: "Contact",
         hash: "#contact",
     },
-]
+] as const
 
 export const projectsData = [
     {
@@ -57,7 +57,7 @@ export const projectsData = [
         imageUrl: stablecoinImg,
         href: "https://github.com/Neftyr/NFR-DeFi-Stablecoin",
     },
-]
+] as const
 
 export const skillsData = [
     {
@@ -189,7 +189,7 @@ export const skillsData = [
         width: 40,
         height: 50,
     },
-]
+] as const
 
 export const experienceData = [
     {
@@ -214,4 +214,4 @@ export const experienceData = [
         icon: React.createElement(FaReact),
         date: "2020 - present",
     },
-]
+] as const

@@ -2,9 +2,10 @@
 
 import React from "react"
 import SectionHeading from "./section-heading"
-import about from "@/styles/about.module.css"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
+
+import about from "@/styles/about.module.css"
 
 export default function About() {
     const { ref } = useSectionInView("About", 1)

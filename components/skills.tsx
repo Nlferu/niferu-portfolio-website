@@ -15,7 +15,7 @@ const fadeInAnimationVariants = {
         y: 100,
     },
 
-    animate: (index) => ({
+    animate: (index: number) => ({
         opacity: 1,
         y: 0,
         transition: {
@@ -44,7 +44,7 @@ export default function Skills() {
                             custom={index}
                             key={index}
                         >
-                            <Link href={skill.href} target="_blank" alt={skill.title}>
+                            <Link href={skill.href} target="_blank">
                                 <Image src={skill.imageUrl} alt={skill.title} quality={95} width={skill.width} height={skill.height} />
                             </Link>
                             <h4>{skill.title}</h4>

@@ -3,9 +3,10 @@
 import React from "react"
 import SectionHeading from "./section-heading"
 import Project from "./project"
-import projectsStyle from "@/styles/project.module.css"
 import { projectsData } from "@/lib/data"
 import { useSectionInView } from "@/lib/hooks"
+
+import projectsStyle from "@/styles/project.module.css"
 
 export default function Projects() {
     const { ref } = useSectionInView("Projects", 0.5)

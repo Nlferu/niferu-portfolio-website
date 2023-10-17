@@ -1,4 +1,3 @@
-import body from "@/styles/main.module.css"
 import Cursor from "@/components/cursor"
 import Particle from "@/components/particles"
 import Intro from "@/components/intro"
@@ -9,6 +8,8 @@ import Skills from "@/components/skills"
 import Experience from "@/components/experience"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+
+import body from "@/styles/main.module.css"
 
 export default function Home() {
     return (
