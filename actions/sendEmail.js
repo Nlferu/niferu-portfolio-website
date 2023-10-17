@@ -39,7 +39,5 @@ export const sendEmail = async (formData) => {
         }
     }
 
-    return {
-        data,
-    }
+    return { data }
 }
