@@ -10,8 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "typescript": "5.2.2",
+    "postcss": "8.4.31",
+    "tailwindcss": "3.3.3",
+    "autoprefixer": "10.4.15",
     "clsx": "^1.2.1",
-    "debug": "^4.3.4",
     "framer-motion": "^10.16.4",
     "next": "13.4.19",
     "react": "18.2.0",
@@ -21,7 +29,6 @@
     "react-tsparticles": "^2.9.3",
     "react-vertical-timeline-component": "^3.6.0",
     "resend": "^0.16.0",
-    "supports-color": "8.1.1",
     "tsparticles": "^2.9.3",
     "@react-email/components": "^0.0.7"
   }

@@ -18,6 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            {/* <body className={`${inter.className} bg-gray-500 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}> */}
             <body className={inter.className}>
                 <ActiveSectionContextProvider>
                     <Header />
