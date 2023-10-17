@@ -88,7 +88,13 @@ export const skillsData = [
         height: 40,
         width: 40,
     },
-    { title: "MQL5", imageUrl: "https://c.mql5.com/i/community/logo_mql5-2.png", href: "https://www.mql5.com", width: 57, height: 37 },
+    {
+        title: "MQL5",
+        imageUrl: "https://c.mql5.com/i/community/logo_mql5-2.png",
+        href: "https://www.mql5.com",
+        width: 57,
+        height: 37,
+    },
     {
         title: "Java",
         imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
@@ -124,7 +130,13 @@ export const skillsData = [
         width: 40,
         height: 40,
     },
-    { title: "NextJs", imageUrl: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg", href: "https://nextjs.org", width: 70, height: 60 },
+    {
+        title: "NextJs",
+        imageUrl: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+        href: "https://nextjs.org",
+        width: 70,
+        height: 60,
+    },
     {
         title: "React",
         imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -167,7 +179,13 @@ export const skillsData = [
         height: 40,
         width: 40,
     },
-    { title: "Git", imageUrl: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg", href: "https://git-scm.com", width: 40, height: 40 },
+    {
+        title: "Git",
+        imageUrl: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+        href: "https://git-scm.com",
+        width: 40,
+        height: 40,
+    },
     {
         title: "Bash",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/1200px-Bash_Logo_Colored.svg.png",
