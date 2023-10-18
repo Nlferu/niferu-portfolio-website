@@ -2,8 +2,8 @@
 
 import React from "react"
 import SectionHeading from "./section-heading"
+import SubmitButton from "./submit-button"
 import contactStyle from "@/styles/contact.module.css"
-import { FaPaperPlane } from "react-icons/fa"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
 import { sendEmail } from "@/actions/sendEmail"
@@ -33,15 +33,20 @@ export default function Contact() {
                 className={contactStyle.form}
                 action={async (formData) => {
                     const { data, error } = await sendEmail(formData)
-                    console.log(error)
+
+                    if (error) {
+                        alert(error)
+                        /** @dev Using retrun to stop function after error */
+                        return
+                    }
+
+                    alert("Email sent successfully!")
                 }}
             >
                 <input className={contactStyle.input} name="senderEmail" type="email" required maxLength={100} placeholder="Your email" />
                 <textarea className={contactStyle.textarea} name="message" required maxLength={5000} placeholder="Your message" />
 
-                <button className={`${contactStyle.submitButton} ${contactStyle.sbutton}`} type="submit">
-                    Submit <FaPaperPlane className={contactStyle.icon} />{" "}
-                </button>
+                <SubmitButton />
             </form>
         </motion.section>
     )
