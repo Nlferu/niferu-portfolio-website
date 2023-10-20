@@ -7,7 +7,6 @@ import Projects from "@/components/projects"
 import Skills from "@/components/skills"
 import Experience from "@/components/experience"
 import Contact from "@/components/contact"
-import Footer from "@/components/footer"
 
 import body from "@/styles/main.module.css"
 
@@ -23,7 +22,6 @@ export default function Home() {
             <Skills />
             <Experience />
             <Contact />
-            <Footer />
         </main>
     )
 }

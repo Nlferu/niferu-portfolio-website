@@ -12,46 +12,48 @@ export default function Header() {
 
     return (
         <header className={header.header}>
-            <motion.div className={header.motion} initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-                <nav className={header.nav}>
-                    <Link
-                        className={header.title}
-                        href="#home"
-                        onClick={() => {
-                            setActiveSection("Home")
-                            setTimeOfLastClick(Date.now())
-                        }}
-                    >
-                        Niferu <span className={header.dot}>.</span>
-                    </Link>
-                    {links.map((link) => (
-                        <li key={link.hash} className={header.li}>
-                            <Link
-                                className={clsx(header.underline, { [header.setAct]: activeSection === link.name })}
-                                href={link.hash}
-                                onClick={() => {
-                                    setActiveSection(link.name)
-                                    setTimeOfLastClick(Date.now())
-                                }}
-                            >
-                                {link.name}
+            <div className={clsx(header.motion, { [header.invisible]: activeSection === "Home" })}>
+                <motion.div initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+                    <nav className={header.nav}>
+                        <Link
+                            className={header.title}
+                            href="#home"
+                            onClick={() => {
+                                setActiveSection("Home")
+                                setTimeOfLastClick(Date.now())
+                            }}
+                        >
+                            Niferu <span className={header.dot}>.</span>
+                        </Link>
+                        {links.map((link) => (
+                            <li key={link.hash} className={header.li}>
+                                <Link
+                                    className={clsx(header.underline, { [header.setAct]: activeSection === link.name })}
+                                    href={link.hash}
+                                    onClick={() => {
+                                        setActiveSection(link.name)
+                                        setTimeOfLastClick(Date.now())
+                                    }}
+                                >
+                                    {link.name}
 
-                                {link.name === activeSection && (
-                                    <motion.span
-                                        className={header.box}
-                                        layoutId="activeSection"
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: 380,
-                                            damping: 30,
-                                        }}
-                                    ></motion.span>
-                                )}
-                            </Link>
-                        </li>
-                    ))}
-                </nav>
-            </motion.div>
+                                    {link.name === activeSection && (
+                                        <motion.span
+                                            className={clsx(header.box, { [header.inviBox]: activeSection === "Home" })}
+                                            layoutId="activeSection"
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 380,
+                                                damping: 30,
+                                            }}
+                                        ></motion.span>
+                                    )}
+                                </Link>
+                            </li>
+                        ))}
+                    </nav>
+                </motion.div>
+            </div>
         </header>
     )
 }

@@ -1,9 +1,24 @@
 .footer {
-    scroll-margin-top: 6rem; /* Ensure "Section Title" is below header */
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
 
     @media (max-width: 680px) {
         margin-top: 3rem;
     }
-    color: white;
+    color: rgb(107 114 128);
+}
+
+.small {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.p {
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
