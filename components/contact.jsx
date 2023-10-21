@@ -3,6 +3,7 @@
 import React from "react"
 import SectionHeading from "./section-heading"
 import SubmitButton from "./submit-button"
+import toast from "react-hot-toast"
 import contactStyle from "@/styles/contact.module.css"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
@@ -35,12 +36,34 @@ export default function Contact() {
                     const { data, error } = await sendEmail(formData)
 
                     if (error) {
-                        alert(error)
+                        toast.error(error, {
+                            style: {
+                                border: "1px solid #713200",
+                                background: "rgba(37, 32, 35, 0.4)",
+                                padding: "15px",
+                                color: "rgba(203, 207, 204, 1)",
+                            },
+                            iconTheme: {
+                                primary: "#713200",
+                                secondary: "black",
+                            },
+                        })
                         /** @dev Using retrun to stop function after error */
                         return
                     }
 
-                    alert("Email sent successfully!")
+                    toast.success("Email sent successfully!", {
+                        style: {
+                            border: "1px solid black",
+                            background: "rgba(37, 32, 35, 0.4)",
+                            padding: "15px",
+                            color: "rgba(203, 207, 204, 1)",
+                        },
+                        iconTheme: {
+                            primary: "rgba(49, 169, 73, 1)",
+                            secondary: "black",
+                        },
+                    })
                 }}
             >
                 <input className={contactStyle.input} name="senderEmail" type="email" required maxLength={100} placeholder="Your email" />

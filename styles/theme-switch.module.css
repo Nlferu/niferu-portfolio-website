@@ -1,0 +1,29 @@
+.position {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 3rem;
+    right: 3rem;
+    color: rgba(159, 137, 94, 0.75);
+    background: transparent;
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 999px;
+    height: 2rem;
+    width: 2rem;
+    border: 0.2px solid rgba(159, 137, 94, 0.75);
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 5px rgba(159, 137, 94, 0.75);
+    transition-duration: 250ms;
+}
+
+.position:hover {
+    box-shadow: 0px 0px 7px rgba(159, 137, 94, 0.75);
+    transform: scale(1.1);
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+.position:active {
+    transform: scale(1.05);
+}
