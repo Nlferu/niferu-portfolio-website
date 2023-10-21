@@ -7,3 +7,7 @@ html {
     scroll-behavior: smooth; /* Enabling smooth scrolling globally */
     --line-color: #805d39;
 }
+
+.light {
+    background: rgba(197, 208, 199, 0.8);
+}
