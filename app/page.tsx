@@ -8,11 +8,9 @@ import Skills from "@/components/skills"
 import Experience from "@/components/experience"
 import Contact from "@/components/contact"
 
-import body from "@/styles/main.module.css"
-
 export default function Home() {
     return (
-        <main className={body.body}>
+        <main className="flex flex-col items-center px-4">
             <Cursor />
             <Particle />
             <Intro />

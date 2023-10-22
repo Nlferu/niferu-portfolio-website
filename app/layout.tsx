@@ -20,22 +20,22 @@ export const metadata = {
 /** This below will be adding below stuff to all of our website pages */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" className="!scroll-smooth">
             {/* <body className={`${inter.className} bg-gray-500 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}> */}
-            <body className={inter.className}>
+            <body className={`${inter.className} pt-28 sm:pt-36 bg-stone-950`}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}
                     <Footer />
-
-                    <ThemeSwitch />
-                    <Toaster
-                        position="top-right"
-                        containerStyle={{
-                            top: "5rem",
-                        }}
-                    />
                 </ActiveSectionContextProvider>
+
+                <ThemeSwitch />
+                <Toaster
+                    position="top-right"
+                    containerStyle={{
+                        top: "5rem",
+                    }}
+                />
             </body>
         </html>
     )

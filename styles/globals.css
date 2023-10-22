@@ -1,13 +1,15 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
-
-body {
-    background: rgba(0, 0, 0, 0.94);
-    /* overflow: hidden; */ /* Hiding scrollbar for whole page */
-}
+@tailwind utilities;
 
 html {
-    scroll-behavior: smooth; /* Enabling smooth scrolling globally */
-    --line-color: #805d39;
+    --line-color: #e5e7eb;
+}
+
+html.dark {
+    --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+    @apply border border-black/10;
 }

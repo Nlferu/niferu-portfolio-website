@@ -11,24 +11,28 @@ export default function Header() {
     const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
-        <header className={header.header}>
-            <div className={clsx(header.motion, { [header.invisible]: activeSection === "Home" })}>
+        <header className="relative z-[999]">
+            <nav
+                className={clsx("fixed flex justify-end items-center  top-0 left-0 h-[4rem] w-full bg-black bg-opacity-60 backdrop-blur-[2px] duration-500", {
+                    "pt-4 !bg-transparent": activeSection === "Home",
+                })}
+            >
                 <motion.div initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-                    <nav className={header.nav}>
+                    <ul className="flex items-center">
                         <Link
-                            className={header.title}
+                            className="fixed px-[5rem] left-0 text-white text-5xl"
                             href="#home"
                             onClick={() => {
                                 setActiveSection("Home")
                                 setTimeOfLastClick(Date.now())
                             }}
                         >
-                            Niferu <span className={header.dot}>.</span>
+                            Niferu <span className="relative left-[-1rem] text-orange-500">.</span>
                         </Link>
                         {links.map((link) => (
-                            <li key={link.hash} className={header.li}>
+                            <li key={link.hash} className="flex relative right-12">
                                 <Link
-                                    className={clsx(header.underline, { [header.setAct]: activeSection === link.name })}
+                                    className={clsx(header.underline, { "text-yellow-700": activeSection === link.name })}
                                     href={link.hash}
                                     onClick={() => {
                                         setActiveSection(link.name)
@@ -39,7 +43,9 @@ export default function Header() {
 
                                     {link.name === activeSection && (
                                         <motion.span
-                                            className={clsx(header.box, { [header.inviBox]: activeSection === "Home" })}
+                                            className={clsx("flex absolute w-full h-[20%] rounded bg-stone-950 bottom-[-0.2rem]", {
+                                                "!bg-transparent": activeSection === "Home",
+                                            })}
                                             layoutId="activeSection"
                                             transition={{
                                                 type: "spring",
@@ -51,9 +57,9 @@ export default function Header() {
                                 </Link>
                             </li>
                         ))}
-                    </nav>
+                    </ul>
                 </motion.div>
-            </div>
+            </nav>
         </header>
     )
 }

@@ -58,6 +58,7 @@
     font-weight: 600;
     background-color: rgba(27, 29, 23, 0.8);
     transform: scale(1.1);
+    transition-duration: 250ms;
 }
 
 .button:active {
@@ -73,10 +74,12 @@
 
 .sbutton:hover {
     transform: scale(1.2);
+    transition-duration: 250ms;
 }
 
 .sbutton:active {
     transform: scale(1.1);
+    transition-duration: 250ms;
 }
 
 /* Below is saying that on whole button hover we target arrow to do below */
