@@ -1,0 +1,42 @@
+.underline {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #999;
+    margin-left: 1dvw;
+    margin-right: 1dvw;
+    font-size: clamp(1rem, 1rem + 0.5dvw, 3rem);
+    cursor: pointer;
+}
+
+.underline:hover {
+    color: #805d39;
+    transition: 0.3s;
+}
+
+.underline::before,
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(159, 137, 94, 0.8);
+    transition: width 0.3s ease-in-out;
+}
+
+.underline::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.underline::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.underline:hover::before,
+.underline:hover::after {
+    width: 100%;
+}
