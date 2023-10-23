@@ -8,8 +8,19 @@ const config: Config = {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
-            transition: {
-                xs: "20px",
+            transitionTimingFunction: {
+                customBezier: "cubic-bezier(0.4,2.1,0.7,1)",
+                customImgBezier: "cubic-bezier(0, 0, 1, 1)",
+            },
+            transitionDuration: {
+                custom: "0.3s",
+            },
+            boxShadow: {
+                "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
+            },
+            colors: {
+                crimson: "rgb(37, 32, 35)",
+                wise: "#805d39",
             },
         },
     },

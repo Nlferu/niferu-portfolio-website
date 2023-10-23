@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import React from "react"
-import intro from "@/styles/intro.module.css"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
@@ -15,19 +14,31 @@ export default function Intro() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
-        <section className={intro.section} ref={ref} id="home">
-            <div className={intro.position}>
+        <section className={"max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"} ref={ref} id="home">
+            <div className="flex items-center justify-center py-[1rem]">
                 <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.3 }}>
-                    <Image className={intro.image} src="/niferu.jpg" alt="Niferu" height="200" width="200" quality="95" priority={true} />
+                    <Image
+                        className="w-[7rem] h-[7rem] object-cover rounded-full shadow-xl border-black border-[0.05rem]"
+                        src="/niferu.jpg"
+                        alt="Niferu"
+                        height="200"
+                        width="200"
+                        quality="95"
+                        priority={true}
+                    />
                 </motion.div>
             </div>
 
-            <motion.h1 className={`${intro.position} ${intro.text}`} initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+            <motion.p
+                className="text-center text-zinc-50 py-[2rem] font-semibold !leading-[1.5] text-2xl sm:text-4xl"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+            >
                 Hello I'm Patryk and I'm full-stack blockchain developer focused on web 3.0
-            </motion.h1>
+            </motion.p>
 
             <motion.div
-                className={`${intro.position} ${intro.links}`}
+                className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-[2rem]"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -35,22 +46,34 @@ export default function Intro() {
                 }}
             >
                 <Link
-                    className={intro.button}
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] text-orange-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="#contact"
                     onClick={() => {
                         setActiveSection("Contact")
                         setTimeOfLastClick(Date.now())
                     }}
                 >
-                    Contact me here <BsArrowRight className={intro.arrow} />
+                    Contact me here <BsArrowRight className="opacity-60 group-hover:translate-x-[0.3rem] transition" />
                 </Link>
-                <a className={intro.button} href="/CV.pdf" download>
-                    Download CV <HiDownload className={intro.icon} />
+                <a
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] text-orange-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    href="/CV.pdf"
+                    download
+                >
+                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
-                <a className={`${intro.button} ${intro.sbutton}`} href="https://www.linkedin.com/in/patryk-wargacki-946401190/" target="_blank">
+                <a
+                    className="flex items-center gap-2 p-[1.15rem] text-gray-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    href="https://www.linkedin.com/in/patryk-wargacki-946401190/"
+                    target="_blank"
+                >
                     <BsLinkedin />
                 </a>
-                <a className={`${intro.button} ${intro.sbutton}`} href="https://github.com/Neftyr" target="_blank">
+                <a
+                    className="flex items-center gap-2 p-[1.15rem] text-gray-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    href="https://github.com/Neftyr"
+                    target="_blank"
+                >
                     <BsGithub />
                 </a>
             </motion.div>
