@@ -18,6 +18,7 @@ We will be building it with JavaScript and without Tailwind
 12. Light/Dark version
 13. Create unique icon
 14. Self writing who am I
+15. Rocket at the bottom, which takes you up
 
 # ISSUES:
 
