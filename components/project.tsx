@@ -24,9 +24,9 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 opacity: opacityProgess,
             }}
         >
-            <section className="bg-crimson max-w-[45rem] border border-wise rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] hover:bg-zinc-900 transition duration-700 sm:group-even:pl-8">
+            <section className="bg-crypt hover:bg-dungeon max-w-[45rem] border border-wise rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
                 <div className="pt-2 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[55%] flex justify-center flex-col h-full sm:group-even:ml-[18rem]">
-                    <h3 className="text-2xl font-semibold text-gray-300 text-center sm:text-left">{title}</h3>
+                    <h3 className="text-2xl font-semibold text-alfa text-center sm:text-left">{title}</h3>
                     <p className="mt-2 mb-4 leading-relaxed text-gray-400 text-center sm:text-left">{description}</p>
                     <ul className="flex flex-wrap mt-4 gap-2 justify-center sm:mt-auto">
                         {tags.map((tag, index) => (

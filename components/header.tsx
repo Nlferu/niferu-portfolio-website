@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <header className="relative z-[999]">
             <nav
-                className={clsx("fixed flex top-0 left-0 h-[4rem] w-full items-center bg-black bg-opacity-60 backdrop-blur-[2px] duration-500", {
+                className={clsx("fixed flex top-0 left-0 h-[4rem] w-full items-center bg-black bg-opacity-50 backdrop-blur-[2px] duration-500", {
                     "pt-4 !bg-transparent": activeSection === "Home",
                 })}
             >
@@ -26,14 +26,14 @@ export default function Header() {
                             setTimeOfLastClick(Date.now())
                         }}
                     >
-                        Niferu <span className="text-orange-500">.</span>
+                        Niferu <span className="text-alfa">.</span>
                     </Link>
                 </motion.ul>
                 <motion.ul className="ml-auto flex flex-wrap sm:flex-nowrap gap-3 mr-[5rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     {links.map((link) => (
                         <li key={link.hash} className="flex">
                             <Link
-                                className={clsx(custom.underline, { "text-yellow-700": activeSection === link.name })}
+                                className={clsx(custom.underline, { "text-alfa": activeSection === link.name })}
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name)
@@ -44,7 +44,7 @@ export default function Header() {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className={clsx("flex absolute w-full h-[20%] rounded bg-stone-950 bottom-[-0.2rem]", {
+                                        className={clsx("flex absolute w-full h-[13%] rounded bg-stone-900 bottom-[-0.2rem]", {
                                             "!bg-transparent": activeSection === "Home",
                                         })}
                                         layoutId="activeSection"

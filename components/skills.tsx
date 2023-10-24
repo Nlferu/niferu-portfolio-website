@@ -46,7 +46,7 @@ export default function Skills() {
                             <Link className="mb-[1rem]" href={skill.href} target="_blank">
                                 <Image src={skill.imageUrl} alt={skill.title} quality={95} width={skill.width} height="0" />
                             </Link>
-                            <h4 className="text-stone-950 dark:text-white text-[0.8rem]">{skill.title}</h4>
+                            <h4 className="text-stone-950 dark:text-gray-300 text-[0.8rem]">{skill.title}</h4>
                         </motion.li>
                     ))}
                 </div>

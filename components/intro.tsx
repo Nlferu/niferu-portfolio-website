@@ -63,14 +63,14 @@ export default function Intro() {
                     Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.15rem] text-gray-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="flex items-center gap-2 p-[1.15rem] text-lg text-alfa bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="https://www.linkedin.com/in/patryk-wargacki-946401190/"
                     target="_blank"
                 >
                     <BsLinkedin />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.15rem] text-gray-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="flex items-center gap-2 p-[1.012rem] text-[1.4rem] text-alfa bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-zinc-900 hover:bg-opacity-80 active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="https://github.com/Neftyr"
                     target="_blank"
                 >

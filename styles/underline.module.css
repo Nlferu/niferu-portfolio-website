@@ -3,15 +3,16 @@
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-    color: #999;
+    color: rgb(200, 200, 200);
     margin-left: 1dvw;
     margin-right: 1dvw;
+    font-weight: 500;
     font-size: clamp(1rem, 1rem + 0.5dvw, 3rem);
     cursor: pointer;
 }
 
 .underline:hover {
-    color: #805d39;
+    color: rgba(255, 141, 0, 1);
     transition: 0.3s;
 }
 
