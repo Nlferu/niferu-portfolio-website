@@ -29,15 +29,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <Header />
                         {children}
                         <Footer />
-                    </ActiveSectionContextProvider>
 
-                    <ThemeSwitch />
-                    <Toaster
-                        position="top-right"
-                        containerStyle={{
-                            top: "5rem",
-                        }}
-                    />
+                        <Toaster
+                            position="top-right"
+                            containerStyle={{
+                                top: "5rem",
+                            }}
+                        />
+                        <ThemeSwitch />
+                    </ActiveSectionContextProvider>
                 </ThemeContextProvider>
             </body>
         </html>
