@@ -18,7 +18,7 @@ const config: Config = {
             boxShadow: {
                 "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
                 sun: "0px 0px 5px rgba(255, 141, 0, 0.8)",
-                sunA: "0px 0px 9px rgba(255, 141, 0, 0.8)",
+                sunA: "0px 0px 9px rgba(255, 141, 0, 1)",
                 night: "0px 0px 5px rgba(13, 13, 53, 0.8)",
                 nightA: "0px 0px 9px rgba(13, 13, 53, 0.8)",
             },
