@@ -1,50 +1,20 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
-import themeStyle from "@/styles/theme-switch.module.css"
+import React from "react"
 import { BsMoon, BsSun } from "react-icons/bs"
+import { useTheme } from "@/context/theme-context"
 
 export type Theme = "light" | "dark"
 
 export default function ThemeSwitch() {
-    /** @dev Default theme 'dark' */
-    const [theme, setTheme] = useState<Theme>("dark")
-
-    const toggleTheme = () => {
-        /** @dev If current theme is 'light' -> change it into 'dark' */
-        if (theme === "dark") {
-            setTheme("light")
-            window.localStorage.setItem("theme", "light")
-            /** @dev Adding theme to DOM for Tailwind */
-            document.documentElement.classList.add("light")
-        } else {
-            setTheme("dark")
-            window.localStorage.setItem("theme", "dark")
-            /** @dev Removing theme from DOM for Tailwind */
-            document.documentElement.classList.remove("light")
-        }
-    }
-
-    useEffect(() => {
-        const localTheme = window.localStorage.getItem("theme") as Theme | null
-
-        if (localTheme) {
-            setTheme(localTheme)
-
-            if (localTheme === "light") {
-                document.documentElement.classList.add("light")
-            }
-
-            /** @dev Reads user browser theme and matches it */
-        } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-            setTheme("light")
-            document.documentElement.classList.add("light")
-        }
-    }, [])
+    const { theme, toggleTheme } = useTheme()
 
     return (
-        <button className={themeStyle.position} onClick={toggleTheme}>
-            {theme === "dark" ? <BsSun /> : <BsMoon />}
+        <button
+            className="flex fixed items-center border-solid border-[0.2px] border-slate-950 dark:border-sun shadow-night dark:shadow-sun hover:shadow-nightA dark:hover:shadow-sunA rounded-full justify-center backdrop-blur-[0.5rem] bottom-12 right-12 text-slate-950 dark:text-sun h-10 w-10 text-2xl hover:scale-[1.15] active:scale-105 transition-all"
+            onClick={toggleTheme}
+        >
+            {theme === "light" ? <BsMoon /> : <BsSun />}
         </button>
     )
 }

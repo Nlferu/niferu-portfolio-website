@@ -14,6 +14,7 @@
     "@types/react": "^18",
     "@types/react-dom": "18.2.7",
     "@react-email/components": "^0.0.7",
+    "@react-email/tailwind": "^0.0.8",
     "react": "^18",
     "react-dom": "^18",
     "next": "13.4.19",

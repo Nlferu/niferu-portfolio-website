@@ -17,9 +17,9 @@ export default function Header() {
                     "pt-4 !bg-transparent": activeSection === "Home",
                 })}
             >
-                <motion.ul className="ml-[7rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+                <motion.ul className="ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     <Link
-                        className="flex text-white text-5xl"
+                        className="flex text-stone-950 dark:text-white text-5xl"
                         href="#home"
                         onClick={() => {
                             setActiveSection("Home")

@@ -5,8 +5,6 @@ import { Particles } from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import type { Engine } from "tsparticles-engine"
 
-import particles from "@/styles/particles.module.css"
-
 export default function Particle() {
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine)
@@ -16,7 +14,7 @@ export default function Particle() {
 
     return (
         <Particles
-            className={particles.format}
+            className="absolute z-[-999] top-[3.5rem] w-full h-full"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesloaded}

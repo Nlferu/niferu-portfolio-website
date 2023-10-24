@@ -1,12 +1,10 @@
-import footer from "@/styles/footer.module.css"
-
 export default function Footer() {
     return (
-        <footer className={footer.footer}>
-            <small className={footer.small}>&copy; 2023 Niferu. All rights reserved.</small>
-            <p className={footer.p}>
-                <span>About this website:</span> built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email
-                & Resend, Vercel hosting.
+        <footer className="mt-10 mb-10 px-4 text-center text-gray-500">
+            <small className="mb-2 block text-xs">&copy; 2023 Niferu. All rights reserved.</small>
+            <p className="text-xs">
+                <span className="font-semibold">About this website:</span> built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
+                Framer Motion, React Email & Resend, Vercel hosting.
             </p>
         </footer>
     )

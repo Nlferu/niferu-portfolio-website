@@ -17,10 +17,15 @@ const config: Config = {
             },
             boxShadow: {
                 "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
+                sun: "0px 0px 5px rgba(159, 137, 94, 0.75)",
+                sunA: "0px 0px 9px rgba(159, 137, 94, 0.75)",
+                night: "0px 0px 5px rgba(13, 13, 53, 0.8)",
+                nightA: "0px 0px 9px rgba(13, 13, 53, 0.8)",
             },
             colors: {
                 crimson: "rgb(37, 32, 35)",
                 wise: "#805d39",
+                sun: "rgba(159, 137, 94, 0.75)",
             },
         },
     },

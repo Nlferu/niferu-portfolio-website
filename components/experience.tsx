@@ -6,15 +6,15 @@ import "react-vertical-timeline-component/style.min.css"
 import { experienceData } from "@/lib/data"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 import { useSectionInView } from "@/lib/hooks"
-
-import expStyle from "@/styles/experience.module.css"
+import { useTheme } from "@/context/theme-context"
 
 export default function Experience() {
     const { ref } = useSectionInView("Experience", 0.7)
+    const { theme } = useTheme()
     const options = { triggerOnce: true }
 
     return (
-        <section className={expStyle.section} ref={ref} id="experience">
+        <section ref={ref} id="experience">
             <SectionHeading>My Experience</SectionHeading>
             {/* We are setting lineColor in globals.css to avoid errors in console */}
             <VerticalTimeline lineColor="" animate={true}>
@@ -27,7 +27,7 @@ export default function Experience() {
                                 border: "1px solid #805d39",
                                 textAlign: "left",
                                 padding: "1.3rem 2rem",
-                                color: "white",
+                                color: theme === "light" ? "black" : "white",
                             }}
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #805d39",
@@ -43,9 +43,9 @@ export default function Experience() {
                             }}
                             intersectionObserverProps={options}
                         >
-                            <h3 className={expStyle.title}>{item.title}</h3>
-                            <p className={expStyle.location}>{item.location}</p>
-                            <p className={expStyle.desc}>{item.description}</p>
+                            <h3 className="-mt-2 !font-semibold capitalize text-orange-700">{item.title}</h3>
+                            <p className="!font-normal text-[#805d39] !mt-3">{item.location}</p>
+                            <p className="!font-light !mt-1">{item.description}</p>
                         </VerticalTimelineElement>
                     </React.Fragment>
                 ))}

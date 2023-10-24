@@ -1,5 +1,5 @@
 import React from "react"
-import emailStyle from "@/styles/email.module.css"
+import { Tailwind } from "@react-email/tailwind"
 import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Text } from "@react-email/components"
 
 type ContactFormEmailProps = {
@@ -12,16 +12,18 @@ export default function EmailContactForm({ message, senderEmail }: ContactFormEm
         <Html>
             <Head />
             <Preview>New message from your portfolio site</Preview>
-            <Body className={emailStyle.body}>
-                <Container>
-                    <Section className={emailStyle.section}>
-                        <Heading className={emailStyle.heading}>Message from the Neftyr contact form</Heading>
-                        <Text>{message}</Text>
-                        <Hr />
-                        <Text>The sender's email is: {senderEmail}</Text>
-                    </Section>
-                </Container>
-            </Body>
+            <Tailwind>
+                <Body className="bg-gray-100 text-black">
+                    <Container>
+                        <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
+                            <Heading className="leading-tight">Message from Neftyr contact form</Heading>
+                            <Text>{message}</Text>
+                            <Hr />
+                            <Text>The sender's email is: {senderEmail}</Text>
+                        </Section>
+                    </Container>
+                </Body>
+            </Tailwind>
         </Html>
     )
 }

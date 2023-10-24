@@ -30,7 +30,7 @@ export default function Intro() {
             </div>
 
             <motion.p
-                className="text-center text-zinc-50 py-[2rem] font-semibold !leading-[1.5] text-2xl sm:text-4xl"
+                className="text-center text-stone-950 dark:text-zinc-50 py-[2rem] font-semibold !leading-[1.5] text-2xl sm:text-4xl"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >

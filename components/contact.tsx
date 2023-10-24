@@ -4,7 +4,6 @@ import React from "react"
 import SectionHeading from "./section-heading"
 import SubmitButton from "./submit-button"
 import toast from "react-hot-toast"
-import contactStyle from "@/styles/contact.module.css"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
 import { sendEmail } from "@/actions/sendEmail"
@@ -14,7 +13,7 @@ export default function Contact() {
 
     return (
         <motion.section
-            className={contactStyle.section}
+            className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -22,16 +21,16 @@ export default function Contact() {
             id="contact"
         >
             <SectionHeading>Contact Me</SectionHeading>
-            <p className={contactStyle.info}>
+            <p className="text-white">
                 Please contact me directly at{" "}
-                <a className={contactStyle.mail} href="mailto:wargacki.patryq@gmail.com">
+                <a className="underline" href="mailto:wargacki.patryq@gmail.com">
                     wargacki.patryq@gmail.com
                 </a>{" "}
                 or through this form.
             </p>
 
             <form
-                className={contactStyle.form}
+                className="flex flex-col mt-10 text-black"
                 action={async (formData) => {
                     const { data, error } = await sendEmail(formData)
 
@@ -66,8 +65,21 @@ export default function Contact() {
                     })
                 }}
             >
-                <input className={contactStyle.input} name="senderEmail" type="email" required maxLength={100} placeholder="Your email" />
-                <textarea className={contactStyle.textarea} name="message" required maxLength={5000} placeholder="Your message" />
+                <input
+                    className="h-12 px-4 rounded-lg bg-white bg-opacity-80 border-[2px] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#805d39] transition-all"
+                    name="senderEmail"
+                    type="email"
+                    required
+                    maxLength={100}
+                    placeholder="Your email"
+                />
+                <textarea
+                    className="h-52 p-4 px-3 rounded-lg bg-white bg-opacity-80 my-[1rem] border-[2px] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#805d39] transition-all"
+                    name="message"
+                    required
+                    maxLength={5000}
+                    placeholder="Your message"
+                />
 
                 <SubmitButton />
             </form>
