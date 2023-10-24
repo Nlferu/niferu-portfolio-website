@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] })
  * we can override it in any other page of our website
  */
 export const metadata = {
-    title: "Neftyr Portfolio",
+    title: "Niferu Portfolio",
     description: "Portfolio",
 }
 
