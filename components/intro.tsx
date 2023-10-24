@@ -46,7 +46,7 @@ export default function Intro() {
                 }}
             >
                 <Link
-                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] text-orange-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-alfa bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="#contact"
                     onClick={() => {
                         setActiveSection("Contact")
@@ -56,7 +56,7 @@ export default function Intro() {
                     Contact me here <BsArrowRight className="opacity-60 group-hover:translate-x-[0.3rem] transition" />
                 </Link>
                 <a
-                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] text-orange-400 bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-alfa bg-black bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-zinc-900 hover:bg-opacity-80 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="/CV.pdf"
                     download
                 >
