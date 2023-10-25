@@ -52,10 +52,10 @@ export default function Particle() {
                 },
                 particles: {
                     color: {
-                        value: theme === "light" ? "rgba(28, 0, 62, 1)" : "#e68e2e",
+                        value: theme === "light" ? "rgba(67, 52, 28, 1)" : "#e68e2e",
                     },
                     links: {
-                        color: theme === "light" ? "rgba(35, 0,140, 0.8)" : "#f5d393",
+                        color: theme === "light" ? "rgba(67, 52, 28, 0.8)" : "#f5d393",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,

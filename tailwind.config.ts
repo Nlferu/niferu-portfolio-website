@@ -30,8 +30,8 @@ const config: Config = {
 
                 anu: "rgb(200, 200, 200)",
 
-                nite: "rgba(35, 0,140, 0.8)",
-                lord: "rgba(85, 25, 200, 1)",
+                nite: "rgba(67, 52, 28, 0.8)",
+                lord: "rgba(67, 52, 28, 1)",
 
                 beta: "#805d39",
                 devil: "rgba(12, 9, 9, 1)",
