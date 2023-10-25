@@ -1,3 +1,4 @@
+.undercity,
 .underline {
     position: relative;
     align-items: center;
@@ -11,11 +12,22 @@
     cursor: pointer;
 }
 
+.undercity {
+    color: rgb(70, 70, 70);
+}
+
+.undercity:hover {
+    color: rgba(85, 25, 200, 1);
+    transition: 0.3s;
+}
+
 .underline:hover {
     color: rgba(255, 141, 0, 1);
     transition: 0.3s;
 }
 
+.undercity::before,
+.undercity::after,
 .underline::before,
 .underline::after {
     content: "";
@@ -27,16 +39,20 @@
     transition: width 0.3s ease-in-out;
 }
 
+.undercity::before,
 .underline::before {
     left: 50%;
     transform: translateX(-50%);
 }
 
+.undercity::after,
 .underline::after {
     right: 50%;
     transform: translateX(50%);
 }
 
+.undercity:hover::before,
+.undercity:hover::after,
 .underline:hover::before,
 .underline:hover::after {
     width: 100%;

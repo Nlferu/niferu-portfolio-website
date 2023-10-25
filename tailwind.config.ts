@@ -27,9 +27,11 @@ const config: Config = {
                 god: "rgba(255, 141, 0, 1)",
 
                 lotr: "#0e2431",
-                try: "rgb(106,89,209)",
-                nite: "rgba(103, 31, 145, 0.75)",
-                lord: "rgba(103, 31, 145, 1)",
+
+                anu: "rgb(200, 200, 200)",
+
+                nite: "rgba(35, 0,140, 0.8)",
+                lord: "rgba(85, 25, 200, 1)",
 
                 beta: "#805d39",
                 devil: "rgba(12, 9, 9, 1)",

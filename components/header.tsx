@@ -6,16 +6,21 @@ import clsx from "clsx" // Adding conditional styles
 import { motion } from "framer-motion"
 import { links } from "@/lib/data"
 import { useActiveSectionContext } from "@/context/active-section-context"
+import { useTheme } from "@/context/theme-context"
 
 export default function Header() {
     const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+    const { theme } = useTheme()
 
     return (
         <header className="relative z-[999]">
             <nav
-                className={clsx("fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-black bg-opacity-50 backdrop-blur-[2px] duration-500", {
-                    "pt-4 !bg-transparent": activeSection === "Home",
-                })}
+                className={clsx(
+                    "fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 backdrop-blur-[2px] duration-500",
+                    {
+                        "pt-4 !bg-transparent": activeSection === "Home",
+                    }
+                )}
             >
                 <motion.ul className="ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     <Link
@@ -33,7 +38,9 @@ export default function Header() {
                     {links.map((link) => (
                         <li key={link.hash} className="flex">
                             <Link
-                                className={clsx(custom.underline, { "text-try dark:text-alfa": activeSection === link.name })}
+                                className={clsx(theme === "dark" ? custom.underline : custom.undercity, {
+                                    "text-nite dark:text-alfa": activeSection === link.name,
+                                })}
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name)
