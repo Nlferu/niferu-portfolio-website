@@ -19,16 +19,14 @@ const config: Config = {
                 "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
                 sun: "0px 0px 5px rgba(255, 141, 0, 0.8)",
                 sunA: "0px 0px 9px rgba(255, 141, 0, 1)",
-                night: "0px 0px 5px rgba(103, 31, 145, 0.75)",
-                nightA: "0px 0px 9px rgba(103, 31, 145, 1)",
+                night: "0px 0px 5px rgba(67, 52, 28, 0.8)",
+                nightA: "0px 0px 9px rgba(67, 52, 28, 1)",
             },
             colors: {
                 alfa: "rgba(255, 141, 0, 0.75)",
                 god: "rgba(255, 141, 0, 1)",
 
                 lotr: "#0e2431",
-
-                anu: "rgb(200, 200, 200)",
 
                 nite: "rgba(67, 52, 28, 0.8)",
                 lord: "rgba(67, 52, 28, 1)",
