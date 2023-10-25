@@ -46,7 +46,7 @@ export default function Contact() {
                             },
                             iconTheme: {
                                 primary: "#713200",
-                                secondary: "black",
+                                secondary: theme === "light" ? "white" : "black",
                             },
                         })
                         /** @dev Using retrun to stop function after error */
@@ -55,14 +55,14 @@ export default function Contact() {
 
                     toast.success("Email sent successfully!", {
                         style: {
-                            border: "1px solid black",
-                            background: "rgba(37, 32, 35, 0.4)",
+                            border: theme === "light" ? "1px solid #713200" : "1px solid rgba(67, 52, 28, 0.8)",
+                            background: theme === "light" ? "white" : "rgba(37, 32, 35, 0.4)",
                             padding: "15px",
-                            color: "rgba(203, 207, 204, 1)",
+                            color: theme === "light" ? "black" : "rgba(203, 207, 204, 1)",
                         },
                         iconTheme: {
                             primary: "rgba(49, 169, 73, 1)",
-                            secondary: "black",
+                            secondary: theme === "light" ? "white" : "black",
                         },
                     })
                 }}
