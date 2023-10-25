@@ -40,6 +40,11 @@
 }
 
 .undercity::before,
+.undercity::after {
+    background-color: #0e2431;
+}
+
+.undercity::before,
 .underline::before {
     left: 50%;
     transform: translateX(-50%);

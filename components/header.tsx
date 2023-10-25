@@ -51,7 +51,7 @@ export default function Header() {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className={clsx("flex absolute w-full h-[13%] rounded bg-dungeon bottom-[-0.2rem]", {
+                                        className={clsx("flex absolute w-full h-[13%] rounded bg-slate-500 dark:bg-dungeon bottom-[-0.2rem]", {
                                             "!bg-transparent": activeSection === "Home",
                                         })}
                                         layoutId="activeSection"
