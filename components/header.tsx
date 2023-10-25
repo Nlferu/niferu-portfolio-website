@@ -31,7 +31,7 @@ export default function Header() {
                             setTimeOfLastClick(Date.now())
                         }}
                     >
-                        Niferu <span className="text-lord dark:text-alfa">.</span>
+                        Niferu <span className="text-stone-500 dark:text-alfa">.</span>
                     </Link>
                 </motion.ul>
                 <motion.ul className="ml-auto flex flex-wrap sm:flex-nowrap gap-3 mr-[5rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
