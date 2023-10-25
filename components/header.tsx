@@ -19,21 +19,21 @@ export default function Header() {
             >
                 <motion.ul className="ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     <Link
-                        className="flex text-stone-950 dark:text-white text-5xl"
+                        className="flex text-lotr dark:text-white text-5xl"
                         href="#home"
                         onClick={() => {
                             setActiveSection("Home")
                             setTimeOfLastClick(Date.now())
                         }}
                     >
-                        Niferu <span className="text-alfa">.</span>
+                        Niferu <span className="text-lord dark:text-alfa">.</span>
                     </Link>
                 </motion.ul>
                 <motion.ul className="ml-auto flex flex-wrap sm:flex-nowrap gap-3 mr-[5rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     {links.map((link) => (
                         <li key={link.hash} className="flex">
                             <Link
-                                className={clsx(custom.underline, { "text-alfa": activeSection === link.name })}
+                                className={clsx(custom.underline, { "text-try dark:text-alfa": activeSection === link.name })}
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name)

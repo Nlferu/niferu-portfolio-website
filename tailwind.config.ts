@@ -25,9 +25,13 @@ const config: Config = {
             colors: {
                 alfa: "rgba(255, 141, 0, 0.75)",
                 god: "rgba(255, 141, 0, 1)",
+
+                lotr: "#0e2431",
+                try: "rgb(106,89,209)",
+                nite: "rgba(103, 31, 145, 0.75)",
+                lord: "rgba(103, 31, 145, 1)",
+
                 beta: "#805d39",
-                nighty: "rgba(103, 31, 145, 0.75)",
-                nightGod: "rgba(103, 31, 145, 1)",
                 devil: "rgba(12, 9, 9, 1)",
                 crypt: "rgba(37, 30, 35, 0.4)",
                 dungeon: "rgb(37, 26, 26)",

@@ -3,6 +3,7 @@
 import React, { useCallback } from "react"
 import { Particles } from "react-tsparticles"
 import { loadFull } from "tsparticles"
+import { useTheme } from "@/context/theme-context"
 import type { Engine } from "tsparticles-engine"
 
 export default function Particle() {
@@ -11,6 +12,7 @@ export default function Particle() {
     }, [])
 
     const particlesloaded = useCallback(async () => {}, [])
+    const { theme } = useTheme()
 
     return (
         <Particles
@@ -50,10 +52,10 @@ export default function Particle() {
                 },
                 particles: {
                     color: {
-                        value: "#e68e2e",
+                        value: theme === "light" ? "#000" : "#e68e2e",
                     },
                     links: {
-                        color: "#f5d393",
+                        color: theme === "light" ? "#0e2431" : "#f5d393",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
