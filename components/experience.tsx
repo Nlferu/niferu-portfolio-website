@@ -43,7 +43,7 @@ export default function Experience() {
                             }}
                             intersectionObserverProps={options}
                         >
-                            <h3 className="-mt-2 !font-semibold capitalize text-alfa">{item.title}</h3>
+                            <h3 className="-mt-2 !font-semibold capitalize text-lord">{item.title}</h3>
                             <p className="!font-normal text-beta !mt-3">{item.location}</p>
                             <p className="!font-light !mt-1">{item.description}</p>
                         </VerticalTimelineElement>
