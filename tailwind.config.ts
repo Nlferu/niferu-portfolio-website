@@ -36,6 +36,7 @@ const config: Config = {
                 beta: "#805d39",
                 devil: "rgba(12, 9, 9, 1)",
                 crypt: "rgba(37, 30, 35, 0.4)",
+                brownie: "rgba(37, 30, 35, 0.9)",
                 dungeon: "rgb(37, 26, 26)",
             },
         },

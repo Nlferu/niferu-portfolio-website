@@ -24,10 +24,12 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 opacity: opacityProgess,
             }}
         >
-            <section className="bg-crypt hover:bg-dungeon max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
+            <section className="bg-brownie dark:bg-crypt hover:bg-dungeon max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
                 <div className="pt-2 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[55%] flex justify-center flex-col h-full sm:group-even:ml-[18rem]">
-                    <h3 className="text-2xl font-semibold text-alfa group-hover:text-god text-center sm:text-left">{title}</h3>
-                    <p className="mt-2 mb-4 leading-relaxed text-gray-400 text-center sm:text-left">{description}</p>
+                    <h3 className="text-2xl font-semibold text-stone-500 dark:text-alfa group-hover:dark:text-god group-hover:text-stone-500 text-center sm:text-left">
+                        {title}
+                    </h3>
+                    <p className="mt-2 mb-4 leading-relaxed text-stone-200 dark:text-gray-400 text-center sm:text-left">{description}</p>
                     <ul className="flex flex-wrap mt-4 gap-2 justify-center sm:mt-auto">
                         {tags.map((tag, index) => (
                             <li className="bg-black/[0.7] px-3 py-[0.41rem] text-[0.7rem] uppercase tracking-wider text-white rounded-full" key={index}>
