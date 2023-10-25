@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <header className="relative z-[999]">
             <nav
-                className={clsx("fixed flex top-0 left-0 h-[4rem] w-full items-center bg-black bg-opacity-50 backdrop-blur-[2px] duration-500", {
+                className={clsx("fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-black bg-opacity-50 backdrop-blur-[2px] duration-500", {
                     "pt-4 !bg-transparent": activeSection === "Home",
                 })}
             >
