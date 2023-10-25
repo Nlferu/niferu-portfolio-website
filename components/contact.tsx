@@ -7,9 +7,11 @@ import toast from "react-hot-toast"
 import { motion } from "framer-motion"
 import { useSectionInView } from "@/lib/hooks"
 import { sendEmail } from "@/actions/sendEmail"
+import { useTheme } from "@/context/theme-context"
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact", 1)
+    const { theme } = useTheme()
 
     return (
         <motion.section
@@ -38,9 +40,9 @@ export default function Contact() {
                         toast.error(error, {
                             style: {
                                 border: "1px solid #713200",
-                                background: "rgba(37, 32, 35, 0.4)",
+                                background: theme === "light" ? "white" : "rgba(37, 32, 35, 0.4)",
                                 padding: "15px",
-                                color: "rgba(203, 207, 204, 1)",
+                                color: theme === "light" ? "black" : "rgba(203, 207, 204, 1)",
                             },
                             iconTheme: {
                                 primary: "#713200",
