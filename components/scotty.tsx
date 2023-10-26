@@ -16,12 +16,14 @@ export default function ScottyTheRocket() {
                     setActiveSection("Home")
                     setTimeOfLastClick(Date.now())
                 }}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
             >
-                <BsRocket className="h-[2rem] w-[2rem] text-las dark:text-beta hover:text-dev dark:hover:text-anu hover:scale-110 active:scale-[1.4] hover:translate-y-[-0.3rem] transition" />
+                <BsRocket
+                    className="mt-[-1rem] p-1 h-[2.5rem] w-[2.5rem] text-las dark:text-beta hover:text-dev dark:hover:text-anu hover:scale-110 active:scale-[1.4] hover:translate-y-[-0.3rem] transition duration-custom ease-customBezier"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                />
             </a>
-            {isHovered && <span className="absolute text-black dark:text-anu text-xs mt-10">Beam me up, Scotty!</span>}
+            {isHovered && <span className="absolute text-black dark:text-anu text-xs mt-6">Beam me up, Scotty!</span>}
         </section>
     )
 }
