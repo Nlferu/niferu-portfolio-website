@@ -21,6 +21,7 @@ const config: Config = {
                 sunA: "0px 0px 9px rgba(253, 186, 116, 1)",
                 night: "0px 0px 9px rgba(0, 0, 0, 0.8)",
                 nightA: "0px 0px 15px rgba(0, 0, 0, 1)",
+                scotty: "5px 15px 5px rgba(0, 0, 0, 1)",
             },
             colors: {
                 alfa: "rgba(255, 141, 0, 0.75)",
