@@ -17,16 +17,22 @@ const config: Config = {
             },
             boxShadow: {
                 "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
-                sun: "0px 0px 5px rgba(255, 141, 0, 0.8)",
-                sunA: "0px 0px 9px rgba(255, 141, 0, 1)",
-                night: "0px 0px 5px rgba(14, 36, 49, 0.8)",
-                nightA: "0px 0px 9px rgba(14, 36, 49, 1)",
+                sun: "0px 0px 5px rgba(253, 186, 116, 0.8)",
+                sunA: "0px 0px 9px rgba(253, 186, 116, 1)",
+                night: "0px 0px 9px rgba(0, 0, 0, 0.8)",
+                nightA: "0px 0px 15px rgba(0, 0, 0, 1)",
             },
             colors: {
                 alfa: "rgba(255, 141, 0, 0.75)",
                 god: "rgba(255, 141, 0, 1)",
 
-                lotr: "#0e2431",
+                las: "rgba(14, 14, 14, 0.8)",
+                dev: "rgba(14, 14, 14, 1)",
+
+                ra: "rgba(253, 186, 116, 0.7)",
+                anu: "rgba(253, 186, 116, 1)",
+
+                lotr: "rgba(14, 36, 49, 1)",
 
                 nite: "rgba(67, 52, 28, 0.8)",
                 lord: "rgba(67, 52, 28, 1)",

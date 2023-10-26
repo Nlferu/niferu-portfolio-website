@@ -56,21 +56,21 @@ export default function Intro() {
                     Contact me here <BsArrowRight className="opacity-60 group-hover:translate-x-[0.3rem] transition" />
                 </Link>
                 <a
-                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-white dark:hover:bg-devil active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-110 hover:bg-white dark:hover:bg-devil active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="/CV.pdf"
                     download
                 >
                     Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.15rem] text-lg text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-devil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="flex items-center gap-2 p-[1.15rem] text-lg text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-devil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="https://www.linkedin.com/in/patryk-wargacki-946401190/"
                     target="_blank"
                 >
                     <BsLinkedin />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.012rem] text-[1.4rem] text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-devil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="flex items-center gap-2 p-[1.012rem] text-[1.4rem] text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-devil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="https://github.com/Neftyr"
                     target="_blank"
                 >
