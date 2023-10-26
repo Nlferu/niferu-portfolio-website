@@ -46,7 +46,7 @@ export default function Intro() {
                 }}
             >
                 <Link
-                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-40 rounded-full focus:scale-110 hover:scale-110 hover:bg-white dark:hover:bg-devil active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-stone-400 dark:bg-black bg-opacity-40 dark:bg-opacity-80 rounded-full focus:scale-110 hover:scale-110 hover:bg-stone-500 dark:hover:bg-black dark:hover:bg-opacity-95 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]"
                     href="#contact"
                     onClick={() => {
                         setActiveSection("Contact")
