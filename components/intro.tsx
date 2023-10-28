@@ -42,7 +42,7 @@ export default function Intro() {
                     typeSpeed={120}
                     backSpeed={140}
                     loop
-                    showCursor={false}
+                    // showCursor={false}
                 />
                 <span className="block">focused on web 3.0</span>
             </motion.p>
