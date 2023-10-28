@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import clsx from "clsx"
 import Link from "next/link"
 import custom from "@/styles/underline.module.css"
-import clsx from "clsx" // Adding conditional styles
+import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { links } from "@/lib/data"
 import { FaBars, FaTimes } from "react-icons/fa"

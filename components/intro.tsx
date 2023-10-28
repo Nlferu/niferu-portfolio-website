@@ -3,6 +3,7 @@
 import Image from "next/image"
 import React from "react"
 import Link from "next/link"
+import Typed from "react-typed"
 import { motion } from "framer-motion"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
@@ -34,7 +35,16 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello I'm Patryk and I'm full-stack blockchain developer focused on web 3.0
+                Hello I'm Patryk and I'm{" "}
+                <Typed
+                    className="ml-[0.5rem] text-green-500 dark:text-god"
+                    strings={["Developer", "Trader", "Financier"]}
+                    typeSpeed={120}
+                    backSpeed={140}
+                    loop
+                    showCursor={false}
+                />
+                <span className="block">focused on web 3.0</span>
             </motion.p>
 
             <motion.div

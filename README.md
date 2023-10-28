@@ -4,33 +4,10 @@ We will be building it with JavaScript and without Tailwind
 
 # Planning:
 
-1. Partially transparent navBar
-2. Hi I'm ... Fullstack dev self writing on page load
-3. Interactive particles in background
-4. Glow on coursor
-5. Social Media icons plus links
-6. Button to read CV in pdf in another window
-7. Hire me button
-8. Contact option
-9. Projects
-10. Compatible with phones (wrap navBar if too little space into 3 lines)
-11. Copyright @2023 by Neftyr | All Rights Reserved (clause) at the bottom of website
-12. Light/Dark version
-13. Create unique icon
-14. Self writing who am I
-15. Rocket at the bottom, which takes you up
-
-# ISSUES:
-
--   When resolution < 500px:
-
-1. Content doesn't center well (projects boxes)
-2. Switch scale into simply smaller boxes, text doesnt fill boxes well to fix
-3. Error message from "textarea" is popping on button -> to fix
-
-## Mobile Devices:
-
-Min width -> 320px
+1. Glow on coursor
+2. Hire me button
+3. Create unique icon
+4. Protection from mass mails attack
 
 ## Run development server:
 
