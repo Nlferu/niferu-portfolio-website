@@ -37,7 +37,7 @@ export default function Intro() {
             >
                 Hello I'm Patryk and I'm{" "}
                 <Typed
-                    className="ml-[0.5rem] text-green-500 dark:text-god"
+                    className="ml-[0.5rem] text-nite dark:text-god"
                     strings={["Developer", "Trader", "Financier"]}
                     typeSpeed={120}
                     backSpeed={140}
