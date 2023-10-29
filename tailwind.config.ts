@@ -36,6 +36,7 @@ const config: Config = {
                 lotr: "rgba(14, 36, 49, 1)",
 
                 nite: "rgba(67, 52, 28, 0.8)",
+                writer: "rgba(67, 52, 28, 0.9)",
                 lord: "rgba(67, 52, 28, 1)",
 
                 divider: "rgba(67, 52, 28, 0.6)",

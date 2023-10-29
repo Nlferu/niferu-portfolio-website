@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    --line-color: black;
+    --line-color: rgba(67, 52, 28, 1);
 }
 
 html.dark {

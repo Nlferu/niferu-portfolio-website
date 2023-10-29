@@ -15,11 +15,11 @@ export default function Intro() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
-        <section className={"max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"} ref={ref} id="home">
+        <section className={"max-w-[51rem] text-center sm:mb-0 scroll-mt-[100rem]"} ref={ref} id="home">
             <div className="flex items-center justify-center py-[1rem]">
                 <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.3 }}>
                     <Image
-                        className="w-[7rem] h-[7rem] object-cover rounded-full shadow-xl border-black border-[0.05rem]"
+                        className="w-[9rem] h-[9rem] object-fit rounded-full shadow-xl border-lotr dark:border-las border-[0.05rem]"
                         src="/niferu.jpg"
                         alt="Niferu"
                         height="200"
@@ -31,20 +31,23 @@ export default function Intro() {
             </div>
 
             <motion.p
-                className="text-center text-lotr dark:text-zinc-50 py-[2rem] font-semibold !leading-[1.5] text-2xl sm:text-4xl"
+                className="text-center text-lotr dark:text-zinc-50 py-[2rem] !leading-[1.5] text-2xl sm:text-4xl"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello I'm Patryk and I'm{" "}
-                <Typed
-                    className="ml-[0.5rem] text-nite dark:text-god"
-                    strings={["Developer", "Trader", "Financier"]}
-                    typeSpeed={120}
-                    backSpeed={140}
-                    loop
-                    // showCursor={false}
-                />
-                <span className="block">focused on web 3.0</span>
+                Hello, I'm Patryk and I'm <span className="text-lord dark:text-god underline decoration-2 underline-offset-2">full-stack developer</span>{" "}
+                focused on web 3.0 with vast knowledge
+                <span className="block ml-[0.5rem]">
+                    in fields like
+                    <Typed
+                        className="ml-[0.5rem] text-nite dark:text-alfa"
+                        strings={["Trading", "Finances", "Chess", "Gaming"]}
+                        typeSpeed={120}
+                        backSpeed={140}
+                        loop
+                        // showCursor={false}
+                    />
+                </span>
             </motion.p>
 
             <motion.div
