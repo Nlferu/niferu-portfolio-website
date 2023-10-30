@@ -4,7 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ThemeSwitch from "@/components/theme-switch"
 import ThemeContextProvider from "@/context/theme-context"
-import { Oxygen, Montserrat } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import { Toaster } from "react-hot-toast"
 
 const montserrat = Montserrat({ subsets: ["latin"] })
