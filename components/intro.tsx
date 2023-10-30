@@ -35,8 +35,9 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello, I'm Patryk and I'm <span className="text-lord dark:text-god underline decoration-2 underline-offset-2">full-stack developer</span>{" "}
-                focused on web 3.0 with vast knowledge
+                Hello, I&apos;m Patryk and I&apos;m{" "}
+                <span className="text-lord dark:text-god underline decoration-2 underline-offset-2">full-stack developer</span> focused on web 3.0 with vast
+                knowledge
                 <span className="block ml-[0.5rem]">
                     in fields like
                     <Typed
