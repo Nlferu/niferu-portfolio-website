@@ -2,6 +2,7 @@
 
 import clsx from "clsx"
 import Link from "next/link"
+import Image from "next/image"
 import custom from "@/styles/underline.module.css"
 import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
@@ -43,7 +44,8 @@ export default function Header() {
                     "md:pt-4 md:!bg-transparent": activeSection === "Home",
                 })}
             >
-                <motion.ul className="ml-[4.5rem] lg:ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+                {/* If Logo applied change below to: ml-[7rem] lg:ml-[13rem] */}
+                <motion.ul className="ml-[3.5rem] lg:ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
                     <Link
                         className="flex text-lotr dark:text-white text-5xl"
                         href="#home"
@@ -53,6 +55,16 @@ export default function Header() {
                             setNavBtn(false)
                         }}
                     >
+                        {/* Logo Implementation
+                        <Image
+                            className="absolute w-[5rem] h-[5rem] brightness-50 dark:brightness-100 object-fit rounded-full ml-[-6rem] mt-[-1.1rem]"
+                            src="/icon.png"
+                            alt="Niferu"
+                            height="200"
+                            width="200"
+                            quality="95"
+                            priority={true}
+                        /> */}
                         Niferu <span className="text-stone-500 dark:text-alfa">.</span>
                     </Link>
                 </motion.ul>
