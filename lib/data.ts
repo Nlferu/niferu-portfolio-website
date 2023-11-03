@@ -52,7 +52,8 @@ export const projectsData = [
     },
     {
         title: "NFR Stablecoin",
-        description: "Digital currency designed for stability and reliability. It's anchored to $1.00, ensuring a consistent value.",
+        description:
+            "Digital currency designed for stability and reliability. It's anchored to $1.00, ensuring a consistent value. Stability is maintained through an algorithmic approach, making it decentralized and trustworthy with implemented exogenous collateral.",
         tags: ["Solidity", "Foundry", "Remix", "Makefile"],
         imageUrl: stablecoinImg,
         href: "https://github.com/Neftyr/NFR-DeFi-Stablecoin",
@@ -190,16 +191,25 @@ export const skillsData = [
 
 export const experienceData = [
     {
+        title: "Education",
+        location: "Cracow University of Economics",
+        description:
+            "I graduated after 3 years of studying Finance and Accounting with a specialization in Financial Markets. I then continued my studies for the next 2 years, focusing on Investment Advisory specialization.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2016-2020",
+    },
+    {
         title: "Derivatives Specialist",
         location: "State Street Bank",
-        description: "I graduated after 3 years of studying and immediately found a job as a derivatives specialist.",
-        icon: React.createElement(LuGraduationCap),
+        description:
+            "Immediately after my graduation, I found a job as a derivatives specialist. I reconciled and processed transactions for institutional clients funds.",
+        icon: React.createElement(CgWorkAlt),
         date: "2016-2020",
     },
     {
         title: "Senior Specialist Operations Department",
         location: "Brown Brothers Harriman",
-        description: "I'm working as senior specialist managing fund mergers, client onboardings and transfers of securities into custody",
+        description: "Currently I'm working as senior specialist managing fund mergers, client onboardings and transfers of securities into custody.",
         icon: React.createElement(CgWorkAlt),
         date: "2020 - present",
     },
@@ -207,7 +217,7 @@ export const experienceData = [
         title: "Full-Stack Developer",
         location: "Krakow, Poland",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes Solidity, Python, JavaScript, MQL5, React, Next.js and more. I'm open to full-time opportunities.",
+            "I am also a full-stack developer working as a freelancer. My stack includes Solidity, Python, JavaScript, MQL5, React, Next.js, and more. I am open to full-time opportunities.",
         icon: React.createElement(FaReact),
         date: "2020 - present",
     },
