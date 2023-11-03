@@ -196,7 +196,7 @@ export const experienceData = [
         description:
             "I graduated after 3 years of studying Finance and Accounting with a specialization in Financial Markets. I then continued my studies for the next 2 years, focusing on Investment Advisory specialization.",
         icon: React.createElement(LuGraduationCap),
-        date: "2016-2020",
+        date: "2013-2018",
     },
     {
         title: "Derivatives Specialist",
