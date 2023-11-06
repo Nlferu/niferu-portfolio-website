@@ -1,8 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { BsRocket } from "react-icons/bs"
 import { useActiveSectionContext } from "@/context/active-section-context"
-import { useState } from "react"
 
 export default function ScottyTheRocket() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()

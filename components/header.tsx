@@ -2,7 +2,6 @@
 
 import clsx from "clsx"
 import Link from "next/link"
-import Image from "next/image"
 import custom from "@/styles/underline.module.css"
 import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"

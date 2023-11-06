@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    --line-color: rgba(67, 52, 28, 1);
-}
-
-html.dark {
-    --line-color: #805d39;
-}
-
 @layer utilities {
     .borderDevil {
         @apply border dark:border-orange-400/10;
@@ -18,4 +10,47 @@ html.dark {
     .borderBlack {
         @apply border-black/10;
     }
+}
+
+html {
+    --line-color: rgba(67, 52, 28, 1);
+}
+
+html.dark {
+    --line-color: #805d39;
+}
+
+/* Scroll Bar Color Light Mode */
+html ::-webkit-scrollbar-track {
+    background: rgb(209 213 219);
+}
+
+/* Scroll Bar Color Dark Mode */
+html.dark ::-webkit-scrollbar-track {
+    background: rgba(12, 9, 9, 1);
+}
+
+/* Scroll Bar Width */
+::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+/* Scroll Bar Handle Color */
+html ::-webkit-scrollbar-thumb {
+    background: rgba(14, 14, 14, 0.8);
+    border-radius: 0.2rem;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: rgba(67, 52, 28, 0.8);
+    border-radius: 0.2rem;
+}
+
+/* Handle on hover */
+html ::-webkit-scrollbar-thumb:hover {
+    background: rgba(14, 14, 14, 1);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+    background: rgb(201, 111, 20);
 }
