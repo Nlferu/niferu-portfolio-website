@@ -44,3 +44,6 @@ export const sendEmail = async (formData: FormData) => {
 
     return { data }
 }
+
+/** @TODO */
+// IMPLEMENT RESET FORMS IF MESSAGE SENT SUCCESSFULLY
