@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useState, ChangeEvent } from "react"
 import SectionHeading from "./section-heading"
 import SubmitButton from "./submit-button"
 import toast from "react-hot-toast"
@@ -10,8 +10,18 @@ import { sendEmail } from "@/actions/sendEmail"
 import { useTheme } from "@/context/theme-context"
 
 export default function Contact() {
+    const [formData, setFormData] = useState({ senderEmail: "", message: "" })
     const { ref } = useSectionInView("Contact", 1)
     const { theme } = useTheme()
+
+    const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = event.target
+        setFormData({ ...formData, [name]: value })
+    }
+
+    const resetForm = () => {
+        setFormData({ senderEmail: "", message: "" })
+    }
 
     return (
         <motion.section
@@ -65,6 +75,7 @@ export default function Contact() {
                             secondary: theme === "light" ? "white" : "black",
                         },
                     })
+                    resetForm()
                 }}
             >
                 <input
@@ -74,6 +85,8 @@ export default function Contact() {
                     required
                     maxLength={100}
                     placeholder="Your email"
+                    value={formData.senderEmail}
+                    onChange={handleInputChange}
                 />
                 <textarea
                     className="h-52 p-4 px-3 rounded-lg bg-white bg-opacity-80 focus:bg-opacity-100 my-[1rem] borderBlack borderDevil focus:outline focus:outline-2 focus:outline-offset-0 dark:focus:outline-offset-2 focus:outline-stone-500 dark:focus:outline-[#805d39] transition-all duration-75"
@@ -81,6 +94,8 @@ export default function Contact() {
                     required
                     maxLength={5000}
                     placeholder="Your message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                 />
 
                 <SubmitButton />
