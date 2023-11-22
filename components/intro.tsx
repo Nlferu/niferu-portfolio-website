@@ -85,7 +85,7 @@ export default function Intro() {
                 </a>
                 <a
                     className="flex items-center gap-2 p-[1.012rem] text-[1.4rem] text-nite hover:text-lord dark:text-alfa dark:hover:text-god borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-devil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
-                    href="https://github.com/Neftyr"
+                    href="https://github.com/Nlferu"
                     target="_blank"
                 >
                     <BsGithub />
