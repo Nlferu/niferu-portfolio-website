@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <body className={`${montserrat.className} pt-28 sm:pt-36 bg-gray-300 dark:bg-devil`}>
+            <body className={`${montserrat.className} pt-28 sm:pt-36 bg-gray-300 dark:bg-[#0c0713]`}>
                 <div
                     style={{ transform: "translate3d(0,0,0)" }}
                     className="bg-[#fbe2e3] dark:bg-[#671f91a8] absolute top-[1rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"

@@ -39,9 +39,12 @@ export default function Header() {
             {/* We need to separate blur effects from each other to get both working */}
             <div className="fixed flex top-0 left-0 h-[4.5rem] w-full backdrop-blur-[2px]" />
             <nav
-                className={clsx("fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 duration-500", {
-                    "md:pt-4 md:!bg-transparent": activeSection === "Home",
-                })}
+                className={clsx(
+                    "fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-white dark:bg-[#07040b] bg-opacity-50 dark:bg-opacity-[85%] duration-500",
+                    {
+                        "md:pt-4 md:!bg-transparent": activeSection === "Home",
+                    }
+                )}
             >
                 {/* If Logo applied change below to: ml-[7rem] lg:ml-[13rem] */}
                 <motion.ul className="ml-[3.5rem] lg:ml-[10rem]" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>

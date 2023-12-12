@@ -1,7 +1,8 @@
 import React from "react"
-import abstractImg from "@/public/abstract.png"
-import stablecoinImg from "@/public/stablecoin.png"
-import digitalImg from "@/public/digital.png"
+import ain from "@/public/ain.jpg"
+import nfr from "@/public/nfr.jpg"
+import drm from "@/public/drm.jpg"
+import vdr from "@/public/vdr3.jpg"
 import { CgWorkAlt } from "react-icons/cg"
 import { FaReact } from "react-icons/fa"
 import { LuGraduationCap } from "react-icons/lu"
@@ -35,19 +36,19 @@ export const links = [
 
 export const projectsData = [
     {
-        title: "Abstract Impulse NFT",
+        title: "Virtual Dream Raiser",
         description:
-            "NFT marketplace designed for artists. It empowers private art creators to have a tailor-made NFT marketplace and maximizes sale profits by posting an auction in a decentralized and automated way, thanks to Chainlink Keepers.",
-        tags: ["Solidity", "JavaScript", "Hardhat", "Graph", "React", "Next.js"],
-        imageUrl: abstractImg,
-        href: "https://abstract-impulse-front-end.vercel.app/",
+            "Fund raising platform offering a decentralized and fully automated ecosystem where anyone can raise funds for anything. This platform supports charitable organizations and verified users! Otherwise it is all based on mutual trust.",
+        tags: ["Solidity", "Foundry", "React", "Next.js", "TypeScript", "Tailwind"],
+        imageUrl: vdr,
+        href: "https://virtual-dream-raiser.vercel.app/",
     },
     {
         title: "Digital Rights Maykr",
         description:
             "Platform, features an on-chain storage system that ensures the safekeeping of valuable creative works. It issues unique copyright certificates to users under ERC4671. With the ability to lend certificated art to other parties.",
-        tags: ["Solidity", "TypeScript", "Hardhat", "React", "Next.js"],
-        imageUrl: digitalImg,
+        tags: ["Solidity", "TypeScript", "Hardhat", "React", "Next.js", "Tailwind"],
+        imageUrl: drm,
         href: "https://digital-rights-maykr.vercel.app/create_certificate",
     },
     {
@@ -55,8 +56,16 @@ export const projectsData = [
         description:
             "Digital currency designed for stability and reliability. It's anchored to $1.00, ensuring a consistent value. Stability is maintained through an algorithmic approach, making it decentralized and trustworthy with implemented exogenous collateral.",
         tags: ["Solidity", "Foundry", "Remix", "Makefile"],
-        imageUrl: stablecoinImg,
+        imageUrl: nfr,
         href: "https://github.com/Neftyr/NFR-DeFi-Stablecoin",
+    },
+    {
+        title: "Abstract Impulse NFT",
+        description:
+            "NFT marketplace designed for artists. It empowers private art creators to have a tailor-made NFT marketplace and maximizes sale profits by posting an auction in a decentralized and automated way, thanks to Chainlink.",
+        tags: ["Solidity", "JavaScript", "Hardhat", "Graph", "React", "Next.js"],
+        imageUrl: ain,
+        href: "https://abstract-impulse-front-end.vercel.app/",
     },
 ] as const
 
@@ -123,9 +132,9 @@ export const skillsData = [
     },
     {
         title: "NextJs",
-        imageUrl: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+        imageUrl: "/next.png",
         href: "https://nextjs.org",
-        width: 80,
+        width: 55,
     },
     {
         title: "React",

@@ -22,7 +22,7 @@ export default function Experience() {
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
                             contentStyle={{
-                                background: "rgba(37, 30, 35, 0.4)",
+                                background: theme === "light" ? "#292428" : "#00000066",
                                 boxShadow: "none",
                                 border: "1px solid #805d39",
                                 textAlign: "left",
@@ -35,17 +35,17 @@ export default function Experience() {
                             date={item.date}
                             icon={item.icon}
                             iconStyle={{
-                                background: "rgb(37, 26, 26)",
+                                background: theme === "light" ? "#292428" : "#07040b",
                                 fontSize: "1.5rem",
-                                color: "rgba(159, 137, 94, 0.7)",
-                                boxShadow: "0px 0px 10px #805d39",
+                                color: theme === "light" ? "#79726d" : "rgba(159, 137, 94, 0.7)",
+                                boxShadow: theme === "light" ? "0px 0px 10px 5px #261b1c" : "0px 0px 10px #805d39",
                                 //boxShadow: "0 0 0 4px #805d39",
                             }}
                             intersectionObserverProps={options}
                         >
-                            <h3 className="-mt-2 !font-semibold capitalize text-lord dark:text-alfa">{item.title}</h3>
-                            <p className="!font-normal text-beta !mt-3">{item.location}</p>
-                            <p className="!font-light !mt-1">{item.description}</p>
+                            <h3 className="-mt-2 !font-semibold capitalize text-[#79726d] dark:text-alfa">{item.title}</h3>
+                            <p className="!font-normal text-stone-500 dark:text-beta !mt-3">{item.location}</p>
+                            <p className="!font-light !mt-1 text-stone-200">{item.description}</p>
                         </VerticalTimelineElement>
                     </React.Fragment>
                 ))}

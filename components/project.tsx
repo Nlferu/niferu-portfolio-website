@@ -24,7 +24,7 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 opacity: opacityProgess,
             }}
         >
-            <section className="bg-brownie dark:bg-crypt hover:bg-dungeon max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
+            <section className="bg-brownie dark:bg-black/20 hover:bg-[#292428] dark:hover:bg-black/40 max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
                 <div className="pt-2 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[55%] flex justify-center flex-col h-full sm:group-even:ml-[18rem]">
                     <h3 className="text-2xl font-semibold text-stone-500 dark:text-alfa group-hover:dark:text-god group-hover:text-stone-500 text-center sm:text-left">
                         {title}

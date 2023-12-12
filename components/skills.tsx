@@ -30,7 +30,7 @@ export default function Skills() {
         <section ref={ref} id="skills">
             <SectionHeading>My skills</SectionHeading>
             <div className="flex justify-center">
-                <div className="flex justify-center flex-wrap w-full  lg:w-1/2">
+                <div className="flex justify-center flex-wrap w-full lg:w-1/2">
                     {skillsData.map((skill, index) => (
                         <motion.li
                             className="flex flex-col justify-end items-center text-center w-[5rem] h-[5rem] m-[1rem] mb-[0.5rem]"
