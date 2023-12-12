@@ -74,7 +74,7 @@ export const skillsData = [
         title: "Solidity",
         imageUrl: "/solidity.png",
         href: "https://docs.soliditylang.org",
-        width: 50,
+        width: 55,
     },
     {
         title: "Python",
