@@ -32,7 +32,7 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                     <p className="mt-2 mb-4 leading-relaxed text-stone-200 dark:text-gray-400 text-center sm:text-left">{description}</p>
                     <ul className="flex flex-wrap mt-4 gap-2 justify-center sm:mt-auto">
                         {tags.map((tag, index) => (
-                            <li className="bg-black/[0.7] px-3 py-[0.41rem] text-[0.7rem] uppercase tracking-wider text-white rounded-full" key={index}>
+                            <li className="bg-black px-3 py-[0.41rem] text-[0.7rem] uppercase tracking-wider text-white rounded-full" key={index}>
                                 {tag}
                             </li>
                         ))}

@@ -72,9 +72,9 @@ export const projectsData = [
 export const skillsData = [
     {
         title: "Solidity",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg",
+        imageUrl: "/solidity.png",
         href: "https://docs.soliditylang.org",
-        width: 35,
+        width: 50,
     },
     {
         title: "Python",
@@ -186,9 +186,9 @@ export const skillsData = [
     },
     {
         title: "PowerShell",
-        imageUrl: "https://static-00.iconduck.com/assets.00/powershell-icon-256x193-nsgfym8m.png",
+        imageUrl: "/powershell.svg",
         href: "https://learn.microsoft.com",
-        width: 40,
+        width: 50,
     },
     {
         title: "Makefile",
