@@ -40,7 +40,7 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 </div>
                 <Link href={href} target="_blank">
                     <Image
-                        className="absolute hidden sm:block top-10 -right-[11rem] w-[28.25rem] rounded-[0.5rem] shadow-2xl group-hover:shadow-3xl duration-[0.6s]
+                        className="absolute hidden sm:block top-10 -right-[11rem] w-[28.25rem] rounded-[0.5rem] shadow-xl group-hover:shadow-3xl dark:group-hover:shadow-houston duration-[0.6s]
                                    group-hover:duration-custom
                                    group-hover:ease-customImgBezier
                                    group-hover:scale-[1.12]
