@@ -1,8 +1,8 @@
 import React from "react"
-import ain from "@/public/ain.jpg"
-import nfr from "@/public/nfr.jpg"
-import drm from "@/public/drm.jpg"
-import vdr from "@/public/vdr.jpg"
+import ain from "@/public/projects/ain.jpg"
+import nfr from "@/public/projects/nfr.jpg"
+import drm from "@/public/projects/drm.jpg"
+import vdr from "@/public/projects/vdr.jpg"
 import { CgWorkAlt } from "react-icons/cg"
 import { FaReact } from "react-icons/fa"
 import { LuGraduationCap } from "react-icons/lu"
@@ -72,127 +72,127 @@ export const projectsData = [
 export const skillsData = [
     {
         title: "Solidity",
-        imageUrl: "/solidity.png",
+        imageUrl: "/icons/solidity.png",
         href: "https://docs.soliditylang.org",
         width: 55,
     },
     {
         title: "Python",
-        imageUrl: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        imageUrl: "/icons/python.svg",
         href: "https://www.python.org",
         width: 50,
     },
     {
         title: "JavaScript",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+        imageUrl: "/icons/js.svg",
         href: "https://www.javascript.com",
         width: 40,
     },
     {
         title: "TypeScript",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+        imageUrl: "/icons/ts.svg",
         href: "https://www.typescriptlang.org",
         width: 40,
     },
     {
         title: "MQL5",
-        imageUrl: "https://c.mql5.com/i/community/logo_mql5-2.png",
+        imageUrl: "/icons/mql.png",
         href: "https://www.mql5.com",
         width: 67,
     },
     {
         title: "Java",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+        imageUrl: "/icons/java.svg",
         href: "https://www.java.com",
         width: 40,
     },
     {
         title: "HTML",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+        imageUrl: "/icons/html.svg",
         href: "https://www.w3.org/html/",
         width: 40,
     },
     {
         title: "CSS",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+        imageUrl: "/icons/css.svg",
         href: "https://www.w3schools.com/css/",
         width: 40,
     },
     {
         title: "Tailwind",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        imageUrl: "/icons/tailwind.svg",
         href: "https://tailwindcss.com/",
         width: 40,
     },
     {
         title: "Framer Motion",
-        imageUrl: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg",
+        imageUrl: "/icons/framer.svg",
         href: "https://www.framer.com/motion/",
         width: 40,
     },
     {
         title: "NextJs",
-        imageUrl: "/next.png",
+        imageUrl: "/icons/next.png",
         href: "https://nextjs.org",
         width: 55,
     },
     {
         title: "React",
-        imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        imageUrl: "/icons/react.svg",
         href: "https://reactjs.org",
         width: 40,
     },
     {
         title: "GraphQL",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png",
+        imageUrl: "/icons/graph.png",
         href: "https://graphql.org/",
         width: 40,
     },
     {
         title: "Apollo",
-        imageUrl: "https://static-00.iconduck.com/assets.00/apollo-icon-2048x2048-zl6zcxhq.png",
+        imageUrl: "/icons/apollo.png",
         href: "https://www.apollographql.com/docs/react/",
         width: 40,
     },
     {
         title: "Foundry",
-        imageUrl: "https://raw.githubusercontent.com/foundry-rs/.github/main/profile/logo.png",
+        imageUrl: "/icons/foundry.png",
         href: "https://github.com/foundry-rs",
         width: 40,
     },
     {
         title: "Hardhat",
-        imageUrl: "https://seeklogo.com/images/H/hardhat-logo-888739EBB4-seeklogo.com.png",
+        imageUrl: "/icons/hardhat.png",
         href: "https://hardhat.org/",
         width: 40,
     },
     {
         title: "Brownie",
-        imageUrl: "https://www.scnsoft.com/technologies-logos/blockchain/brownie-logo.svg",
+        imageUrl: "/icons/brownie.svg",
         href: "https://eth-brownie.readthedocs.io/en/stable/",
         width: 40,
     },
     {
         title: "Git",
-        imageUrl: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+        imageUrl: "/icons/git.svg",
         href: "https://git-scm.com",
         width: 40,
     },
     {
         title: "Bash",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/1200px-Bash_Logo_Colored.svg.png",
+        imageUrl: "/icons/bash.png",
         href: "https://www.gnu.org/software/bash/manual/bash.html",
         width: 40,
     },
     {
         title: "PowerShell",
-        imageUrl: "/powershell.svg",
+        imageUrl: "/icons/powershell.svg",
         href: "https://learn.microsoft.com",
         width: 50,
     },
     {
         title: "Makefile",
-        imageUrl: "https://static-00.iconduck.com/assets.00/text-x-makefile-icon-394x512-gezezj2o.png",
+        imageUrl: "/icons/makefile.png",
         href: "https://makefiletutorial.com/",
         width: 40,
     },

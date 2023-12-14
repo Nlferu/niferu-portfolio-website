@@ -16,37 +16,21 @@ const config: Config = {
                 custom: "0.3s",
             },
             boxShadow: {
-                "3xl": "0 0 20px rgba(255, 255, 255, 0.2)",
                 sun: "0px 0px 5px rgba(253, 186, 116, 0.8)",
                 sunA: "0px 0px 9px rgba(253, 186, 116, 1)",
                 night: "0px 0px 9px rgba(0, 0, 0, 0.8)",
                 nightA: "0px 0px 15px rgba(0, 0, 0, 1)",
-                houston: "0px 0px 10px #805d39",
-                scotty: "5px 15px 5px rgba(0, 0, 0, 1)",
+                projectLight: "0 0 15px #746d69",
+                projectDark: "0 0 10px #ff8d00",
             },
             colors: {
-                alfa: "rgba(255, 141, 0, 0.75)",
-                god: "rgba(255, 141, 0, 1)",
-
-                las: "rgba(14, 14, 14, 0.8)",
-                dev: "rgba(14, 14, 14, 1)",
-
-                ra: "rgba(253, 186, 116, 0.7)",
-                anu: "rgba(253, 186, 116, 1)",
-
-                lotr: "rgba(14, 36, 49, 1)",
-
-                nite: "rgba(67, 52, 28, 0.8)",
-                writer: "rgba(67, 52, 28, 0.9)",
-                lord: "rgba(67, 52, 28, 1)",
-
-                divider: "rgba(67, 52, 28, 0.6)",
-
+                main: "#ff8d00",
+                darky: "#0e0e0e",
+                lighty: "#fdba74",
+                lotr: "#0e2431",
+                darklord: "#43341c",
                 beta: "#805d39",
-                devil: "rgba(12, 9, 9, 1)",
-                crypt: "rgba(37, 30, 35, 0.4)",
-                brownie: "rgba(37, 30, 35, 0.9)",
-                dungeon: "rgb(37, 26, 26)",
+                devil: "#0c0909",
             },
         },
     },

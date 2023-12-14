@@ -18,12 +18,12 @@ export default function ScottyTheRocket() {
                 }}
             >
                 <BsRocket
-                    className="mt-[-1rem] p-1 h-[2.5rem] w-[2.5rem] text-las dark:text-beta hover:text-dev dark:hover:text-anu hover:scale-110 active:scale-[1.4] hover:translate-y-[-0.3rem] transition duration-custom ease-customBezier"
+                    className="mt-[-1rem] p-1 h-[2.5rem] w-[2.5rem] text-darky/80 dark:text-beta hover:text-darky dark:hover:text-lighty hover:scale-110 active:scale-[1.4] hover:translate-y-[-0.3rem] transition duration-custom ease-customBezier"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 />
             </a>
-            {isHovered && <span className="absolute text-black dark:text-anu text-xs mt-6">Beam me up, Scotty!</span>}
+            {isHovered && <span className="absolute text-black dark:text-lighty text-xs mt-6">Beam me up, Scotty!</span>}
         </section>
     )
 }

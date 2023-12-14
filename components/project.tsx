@@ -24,9 +24,9 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 opacity: opacityProgess,
             }}
         >
-            <section className="bg-brownie dark:bg-black/20 hover:bg-[#292428] dark:hover:bg-black/40 max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
+            <section className="bg-[#251e23e6] dark:bg-black/20 hover:bg-[#292428] dark:hover:bg-black/40 max-w-[45rem] border border-beta rounded-lg overflow-hidden sm:pr-1 relative sm:h-[19.5rem] transition duration-700 sm:group-even:pl-8">
                 <div className="pt-2 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[55%] flex justify-center flex-col h-full sm:group-even:ml-[18rem]">
-                    <h3 className="text-2xl font-semibold text-stone-500 dark:text-alfa group-hover:dark:text-god group-hover:text-stone-500 text-center sm:text-left">
+                    <h3 className="text-2xl font-semibold text-stone-500 dark:text-main/75 group-hover:dark:text-main group-hover:text-[#867f7a] text-center sm:text-left">
                         {title}
                     </h3>
                     <p className="mt-2 mb-4 leading-relaxed text-stone-200 dark:text-gray-400 text-center sm:text-left">{description}</p>
@@ -40,7 +40,7 @@ export default function Project({ title, description, tags, imageUrl, href }: Pr
                 </div>
                 <Link href={href} target="_blank">
                     <Image
-                        className="absolute hidden sm:block top-10 -right-[11rem] w-[28.25rem] rounded-[0.5rem] shadow-xl group-hover:shadow-3xl dark:group-hover:shadow-houston duration-[0.6s]
+                        className="absolute hidden sm:block top-10 -right-[11rem] w-[28.25rem] rounded-[0.5rem] shadow-xl group-hover:shadow-projectLight dark:group-hover:shadow-projectDark duration-[0.6s]
                                    group-hover:duration-custom
                                    group-hover:ease-customImgBezier
                                    group-hover:scale-[1.12]

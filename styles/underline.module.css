@@ -32,7 +32,7 @@
 .underline::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1.5px;
     width: 0;
     height: 2px;
     background-color: rgba(159, 137, 94, 0.8);

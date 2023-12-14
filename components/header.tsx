@@ -67,7 +67,7 @@ export default function Header() {
                             quality="95"
                             priority={true}
                         /> */}
-                        Niferu <span className="text-stone-500 dark:text-alfa">.</span>
+                        Niferu <span className="text-stone-500 dark:text-main/75">.</span>
                     </Link>
                 </motion.ul>
                 <motion.ul
@@ -83,7 +83,7 @@ export default function Header() {
                         <li key={link.hash} className="flex justify-center py-3 md:pt-0">
                             <Link
                                 className={clsx(theme === "dark" ? custom.underline : custom.undercity, {
-                                    "text-nite dark:text-alfa": activeSection === link.name,
+                                    "text-darklord/80 dark:text-main/75 dark:hover:text-main": activeSection === link.name,
                                 })}
                                 href={link.hash}
                                 onClick={() => {
@@ -96,7 +96,7 @@ export default function Header() {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className={clsx("flex absolute w-full h-[13%] rounded bg-stone-400 dark:bg-dungeon bottom-[-0.2rem]", {
+                                        className={clsx("flex absolute w-full h-[13%] rounded bg-stone-400 dark:bg-[#251a1a] bottom-[-0.2rem]", {
                                             "md:!bg-transparent": activeSection === "Home",
                                         })}
                                         layoutId="activeSection"

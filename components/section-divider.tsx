@@ -7,7 +7,7 @@ export default function SectionDivider() {
     return (
         <div className="flex relative justify-center">
             <motion.div
-                className="hidden sm:block mt-28 mb-[-1rem] h-20 w-1 bg-divider dark:bg-black dark:bg-opacity-60 rounded-full"
+                className="hidden sm:block mt-28 mb-[-1rem] h-20 w-1 bg-darklord/60 dark:bg-black dark:bg-opacity-60 rounded-full"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.125 }}
