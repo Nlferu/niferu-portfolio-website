@@ -37,7 +37,7 @@ export default function Header() {
     return (
         <header className="relative z-[999]">
             {/* We need to separate blur effects from each other to get both working */}
-            <div className="fixed flex top-0 left-0 h-[4.5rem] w-full backdrop-blur-[2px]" />
+            <div className="fixed flex top-0 left-0 h-[4.5rem] w-full backdrop-blur-[5px]" />
             <nav
                 className={clsx(
                     "fixed flex top-0 left-0 h-[4.5rem] w-full items-center bg-white dark:bg-[#07040b] bg-opacity-50 dark:bg-opacity-[85%] duration-500",
@@ -96,7 +96,7 @@ export default function Header() {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className={clsx("flex absolute w-full h-[13%] rounded bg-stone-400 dark:bg-[#251a1a] bottom-[-0.2rem]", {
+                                        className={clsx("flex absolute w-full h-[13%] rounded bg-stone-400 dark:bg-[#c8c8c8] bottom-[-0.2rem]", {
                                             "md:!bg-transparent": activeSection === "Home",
                                         })}
                                         layoutId="activeSection"

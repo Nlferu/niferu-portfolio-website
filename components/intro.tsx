@@ -6,6 +6,7 @@ import Link from "next/link"
 import Typed from "react-typed"
 import { motion } from "framer-motion"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs"
+import { FaChessKnight } from "react-icons/fa6"
 import { HiDownload } from "react-icons/hi"
 import { useSectionInView } from "@/lib/hooks"
 import { useActiveSectionContext } from "@/context/active-section-context"
@@ -89,6 +90,13 @@ export default function Intro() {
                     target="_blank"
                 >
                     <BsGithub />
+                </a>
+                <a
+                    className="flex items-center gap-2 p-[1.15rem] text-lg text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-darkyil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px]"
+                    href="https://lichess.org/@/AmNiferu"
+                    target="_blank"
+                >
+                    <FaChessKnight />
                 </a>
             </motion.div>
         </section>
