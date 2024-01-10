@@ -1,16 +1,20 @@
-# Project Tools:
+# Niferu Portfolio Website:
 
-Built with TypeScript and Tailwind
+https://niferu.vercel.app/
 
-# Planning:
+## FULL-STACK DEVELOPER
 
-1. Glow on coursor -> disabled on light mode, less effective on darkmode
-2. Hire me button
-3. Create unique icon
-4. Protection from mass mails attack (add captcha)
+I've spent past 7 years mastering finance industry by working
+for some of the top American banks in investment sector and
+trading various markets on my own.
+Since mid of 2020 I have
+started my programming journey from taking beginner Java
+course, after which I moved into programming trading bots
+and indicators for forex market. My next step was delving into
+the exciting world of blockchain technology, exploring its
+endless possibilities since early 2022 until now.
+I am highly motivated, self-driven, and detail-oriented.
 
-## Run development server:
+### Technologies Used
 
-```bash
-yarn dev
-```
+TypeScript, Tailwin, React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting and more...
