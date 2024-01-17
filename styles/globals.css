@@ -42,7 +42,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-    background: rgba(67, 52, 28, 0.8);
+    background: #ffb997;
     border-radius: 0.2rem;
 }
 
@@ -52,5 +52,5 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-    background: rgb(201, 111, 20);
+    background: #ba966b;
 }

@@ -44,7 +44,7 @@ export default function Experience() {
                             intersectionObserverProps={options}
                         >
                             <h3 className="-mt-2 !font-semibold capitalize text-[#79726d] dark:text-main/75">{item.title}</h3>
-                            <p className="!font-normal text-stone-500 dark:text-beta !mt-3">{item.location}</p>
+                            <p className="!font-normal text-stone-500 dark:text-[#ffb997] !mt-3">{item.location}</p>
                             <p className="!font-light !mt-1 text-stone-200">{item.description}</p>
                         </VerticalTimelineElement>
                     </React.Fragment>

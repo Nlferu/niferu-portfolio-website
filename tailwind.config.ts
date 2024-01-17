@@ -20,7 +20,7 @@ const config: Config = {
                 sunA: "0px 0px 9px rgba(253, 186, 116, 1)",
                 night: "0px 0px 9px rgba(0, 0, 0, 0.8)",
                 nightA: "0px 0px 15px rgba(0, 0, 0, 1)",
-                btnShadow: "0px 0px 10px #0e2431",
+                btnShadow: "0px 0px 10px 0px #261b1c",
                 projectLight: "0 0 15px #746d69",
                 projectDark: "0 0 10px #ff8d00",
             },
