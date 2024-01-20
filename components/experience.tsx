@@ -14,7 +14,7 @@ export default function Experience() {
     const options = { triggerOnce: true }
 
     return (
-        <section ref={ref} id="experience">
+        <section className="overflow-x-clip" ref={ref} id="experience">
             <SectionHeading>My Experience</SectionHeading>
             {/* We are setting lineColor in globals.css to avoid errors in console */}
             <VerticalTimeline lineColor="" animate={true}>
@@ -27,7 +27,7 @@ export default function Experience() {
                                 border: "1px solid #805d39",
                                 textAlign: "left",
                                 padding: "1.3rem 2rem",
-                                color: theme === "light" ? "black" : "white",
+                                color: theme === "light" && screen.availWidth > 1170 ? "black" : "white",
                             }}
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #805d39",
