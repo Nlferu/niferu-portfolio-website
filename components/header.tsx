@@ -70,10 +70,12 @@ export default function Header() {
                         Niferu <span className="text-stone-500 dark:text-main/75">.</span>
                     </Link>
                 </motion.ul>
+
+                {/* MODAL */}
                 <motion.ul
                     className={
                         navBtn
-                            ? "md:hidden absolute w-full top-[4.6rem] flex-col bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70 backdrop-blur-[5px] rounded-b-lg"
+                            ? "md:hidden absolute w-full top-[4.6rem] flex-col bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-80 backdrop-blur-[5px] rounded-b-lg"
                             : "hidden md:flex ml-auto flex-nowrap gap-1 lg:gap-3 mr-[5rem] lg:mr-[2rem]"
                     }
                     initial={{ y: -100, opacity: 0 }}
@@ -110,7 +112,14 @@ export default function Header() {
                             </Link>
                         </li>
                     ))}
+                    <div
+                        className="bg-black/40 h-[100vh] w-full absolute"
+                        onClick={() => {
+                            setNavBtn(false)
+                        }}
+                    ></div>
                 </motion.ul>
+
                 <motion.div
                     className={"flex md:hidden ml-auto mr-[3rem] text-2xl text-lotr dark:text-white hover:cursor-pointer"}
                     initial={{ y: -100, opacity: 0 }}
