@@ -114,12 +114,16 @@ export default function Header() {
                     ))}
 
                     {/* Adds ability to close modal on click below it */}
-                    <div
-                        className="bg-black/40 h-[100vh] w-full absolute"
-                        onClick={() => {
-                            setNavBtn(false)
-                        }}
-                    ></div>
+                    {navBtn ? (
+                        <div
+                            className="bg-black/40 h-[100vh] w-full absolute"
+                            onClick={() => {
+                                setNavBtn(false)
+                            }}
+                        ></div>
+                    ) : (
+                        <div></div>
+                    )}
                 </motion.ul>
 
                 <motion.div
