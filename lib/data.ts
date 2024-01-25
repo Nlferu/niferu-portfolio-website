@@ -49,7 +49,7 @@ export const projectsData = [
             "Platform, features an on-chain storage system that ensures the safekeeping of valuable creative works. It issues unique copyright certificates to users under ERC4671. With the ability to lend certificated art to other parties.",
         tags: ["Solidity", "TypeScript", "Hardhat", "React", "Next.js", "Tailwind"],
         imageUrl: drm,
-        href: "https://digital-rights-maykr.vercel.app/create_certificate",
+        href: "https://digital-rights-maykr.vercel.app/",
     },
     {
         title: "NFR Stablecoin",
