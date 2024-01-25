@@ -9,7 +9,7 @@ export default function ScottyTheRocket() {
     const [isHovered, setIsHovered] = useState(false)
 
     return (
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center mt-2">
             <a
                 href="#home"
                 onClick={() => {
