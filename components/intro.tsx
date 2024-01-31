@@ -62,30 +62,32 @@ export default function Intro() {
             >
                 <Link
                     className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-darklord/80 hover:text-darklord dark:text-main/75
-                             dark:hover:text-main borderBlack borderDevil bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-80 rounded-full focus:scale-110 hover:scale-110
+                             dark:hover:text-main borderDevil dark:hover:border-main bg-white/40 dark:bg-black/80 rounded-full focus:scale-110 hover:scale-110
                              hover:bg-white dark:hover:bg-black dark:hover:bg-opacity-95 active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px]
-                               shadow-btnShadow dark:shadow-sunA backdrop-blur-[0.1rem]"
+                               shadow-btnShadow dark:shadow-sunA backdrop-blur-[0.1rem] hover:border-darklord/90"
                     href="#contact"
                     onClick={() => {
                         setActiveSection("Contact")
                         setTimeOfLastClick(Date.now())
                     }}
                 >
-                    Hire Me <BsArrowRight className="opacity-60 group-hover:translate-x-[0.3rem] transition" />
+                    Hire Me <BsArrowRight className="opacity-60 group-hover:translate-x-[0.3rem] transition group-hover:opacity-90" />
                 </Link>
                 <a
                     className="group flex items-center gap-2 px-[1.5rem] py-[1.1rem] font-bold text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main
-                               borderBlack borderDevil bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-110 hover:bg-white
-                               dark:hover:bg-darkyil active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]"
+                               borderDevil dark:hover:border-main bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-110
+                               hover:bg-white dark:hover:bg-darkyil active:scale-105 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]
+                               border-darklord/20 hover:border-darklord/50"
                     href="/CV.pdf"
                     download
                 >
-                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                    Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition group-hover:opacity-90" />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.15rem] text-lg text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main borderBlack
-                               borderDevil bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-darkyil
-                               active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]"
+                    className="flex items-center gap-2 p-[1.15rem] text-lg text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main
+                               borderDevil dark:hover:border-main bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2]
+                               hover:bg-white dark:hover:bg-darkyil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]
+                               border-darklord/20 hover:border-darklord/50"
                     href="https://www.linkedin.com/in/patryk-wargacki-946401190/"
                     target="_blank"
                 >
@@ -93,17 +95,19 @@ export default function Intro() {
                 </a>
                 <a
                     className="flex items-center gap-2 p-[1.012rem] text-[1.4rem] text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main
-                               borderBlack borderDevil bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white
-                               dark:hover:bg-darkyil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]"
+                               borderDevil dark:hover:border-main bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2]
+                               hover:bg-white dark:hover:bg-darkyil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]
+                               border-darklord/20 hover:border-darklord/50"
                     href="https://github.com/Nlferu"
                     target="_blank"
                 >
                     <BsGithub />
                 </a>
                 <a
-                    className="flex items-center gap-2 p-[1.15rem] text-lg text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main borderBlack
-                               borderDevil bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2] hover:bg-white dark:hover:bg-darkyil
-                               active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]"
+                    className="flex items-center gap-2 p-[1.15rem] text-lg text-darklord/80 hover:text-darklord dark:text-main/75 dark:hover:text-main
+                               borderDevil dark:hover:border-main bg-white/40 dark:bg-black bg-opacity-40 dark:bg-opacity-50 rounded-full focus:scale-110 hover:scale-[1.2]
+                               hover:bg-white dark:hover:bg-darkyil active:scale-110 duration-custom ease-customBezier hover:translate-y-[-4px] backdrop-blur-[0.1rem]
+                               border-darklord/20 hover:border-darklord/50"
                     href="https://lichess.org/@/AmNiferu"
                     target="_blank"
                 >

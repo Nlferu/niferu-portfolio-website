@@ -79,8 +79,8 @@ export default function Contact() {
                 }}
             >
                 <input
-                    className="h-12 px-4 rounded-lg bg-white bg-opacity-80 focus:bg-opacity-100 borderBlack borderDevil focus:outline focus:outline-2 focus:outline-offset-0
-                               dark:focus:outline-offset-2 focus:outline-stone-500 dark:focus:outline-[#805d39] transition-all duration-75"
+                    className="h-12 px-4 rounded-lg bg-white bg-opacity-80 focus:bg-opacity-100 borderDevil focus:outline focus:outline-1 focus:outline-offset-0
+                               dark:focus:outline-offset-1 focus:outline-stone-500 dark:focus:outline-main transition-all duration-75"
                     name="senderEmail"
                     type="email"
                     required
@@ -90,8 +90,8 @@ export default function Contact() {
                     onChange={handleInputChange}
                 />
                 <textarea
-                    className="h-52 p-4 px-3 rounded-lg bg-white bg-opacity-80 focus:bg-opacity-100 my-[1rem] borderBlack borderDevil focus:outline focus:outline-2
-                               focus:outline-offset-0 dark:focus:outline-offset-2 focus:outline-stone-500 dark:focus:outline-[#805d39] transition-all duration-75"
+                    className="h-52 p-4 px-3 rounded-lg bg-white bg-opacity-80 focus:bg-opacity-100 my-[1rem] borderDevil focus:outline focus:outline-1
+                               focus:outline-offset-0 dark:focus:outline-offset-1 focus:outline-stone-500 dark:focus:outline-main transition-all duration-75"
                     name="message"
                     required
                     maxLength={5000}
