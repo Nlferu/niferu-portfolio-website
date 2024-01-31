@@ -29,7 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 ></div>
                 <div
                     style={{ transform: "translate3d(0,0,0)" }}
-                    className="dark:bg-[#48457c] absolute top-[9rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
+                    className="dark:bg-[#48457c] absolute top-[9rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem]
+                               md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
                 ></div>
 
                 <ThemeContextProvider>
