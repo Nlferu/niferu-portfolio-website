@@ -35,13 +35,13 @@
     bottom: -1.5px;
     width: 0;
     height: 2px;
-    background-color: rgba(159, 137, 94, 0.8);
+    background-color: #ffb997;
     transition: width 0.3s ease-in-out;
 }
 
 .undercity::before,
 .undercity::after {
-    background-color: #0e2431;
+    background-color: #a8a29e;
 }
 
 .undercity::before,
