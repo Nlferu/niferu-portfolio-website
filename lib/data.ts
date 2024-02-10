@@ -65,7 +65,7 @@ export const projectsData = [
             "NFT marketplace designed for artists. It empowers private art creators to have a tailor-made NFT marketplace and maximizes sale profits by posting an auction in a decentralized and automated way, thanks to Chainlink.",
         tags: ["Solidity", "JavaScript", "Hardhat", "Graph", "React", "Next.js"],
         imageUrl: ain,
-        href: "https://abstract-impulse-front-end.vercel.app/",
+        href: "https://abstract-impulse-nft.vercel.app/",
     },
 ] as const
 
