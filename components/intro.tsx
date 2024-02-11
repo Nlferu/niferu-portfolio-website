@@ -20,7 +20,7 @@ export default function Intro() {
             <div className="flex items-center justify-center py-[1rem]">
                 <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.3 }}>
                     <Image
-                        className="w-[9rem] h-[9rem] object-fit rounded-full shadow-xl border-lotr dark:border-darky/80 border-[0.05rem]"
+                        className="w-[9rem] h-[9rem] object-fill rounded-full shadow-xl border-lotr dark:border-darky/80 border-[0.05rem] self-center"
                         src="/niferu.jpg"
                         alt="Niferu"
                         height="200"
