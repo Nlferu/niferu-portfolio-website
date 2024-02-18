@@ -75,7 +75,7 @@ export default function Header() {
                 <motion.ul
                     className={
                         navBtn
-                            ? "md:hidden absolute w-full top-[4.6rem] flex-col bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-80 backdrop-blur-[5px] rounded-b-lg"
+                            ? "md:hidden absolute w-full top-[4.6rem] flex-col bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-70 backdrop-blur-[5px] rounded-b-lg"
                             : "hidden md:flex ml-auto flex-nowrap gap-1 lg:gap-3 mr-[5rem] lg:mr-[2rem]"
                     }
                     initial={{ y: -100, opacity: 0 }}
@@ -116,7 +116,7 @@ export default function Header() {
                     {/* Adds ability to close modal on click below it */}
                     {navBtn ? (
                         <div
-                            className="bg-black/40 h-[100vh] w-full absolute"
+                            className="bg-black/40 h-[100vh] w-full absolute top-0 translate-y-[-0.15rem] z-[-10]"
                             onClick={() => {
                                 setNavBtn(false)
                             }}
