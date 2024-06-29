@@ -36,14 +36,13 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello, I&apos;m Patryk and I&apos;m{" "}
-                <span className="text-darklord dark:text-main underline decoration-2 underline-offset-2">full-stack developer</span> focused on web 3.0 with
-                vast knowledge
+                Hello, I&apos;m Patryk, a <span className="text-darklord dark:text-main underline decoration-2 underline-offset-2">blockchain developer</span>{" "}
+                with extensive full-stack experience and vast
                 <span className="block ml-[0.5rem]">
-                    in fields like
+                    knowledge in fields like
                     <Typed
-                        className="ml-[0.5rem] text-darklord/80 dark:text-main/75"
-                        strings={["Trading", "Finances", "Chess", "Gaming"]}
+                        className="ml-[0.5rem] text-darklord/80 dark:text-main/80"
+                        strings={["Trading", "Finance", "Chess", "Gaming"]}
                         typeSpeed={120}
                         backSpeed={140}
                         loop
