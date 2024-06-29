@@ -1,11 +1,12 @@
 import React from "react"
 import ain from "@/public/projects/ain.jpg"
-import nfr from "@/public/projects/nfr.jpg"
 import drm from "@/public/projects/drm.jpg"
 import vdr from "@/public/projects/vdr.jpg"
+import memtize from "@/public/projects/memtize.jpg"
 import { CgWorkAlt } from "react-icons/cg"
 import { FaReact } from "react-icons/fa"
 import { LuGraduationCap } from "react-icons/lu"
+import { SiSolidity } from "react-icons/si"
 
 export const links = [
     {
@@ -36,12 +37,12 @@ export const links = [
 
 export const projectsData = [
     {
-        title: "Virtual Dream Raiser",
+        title: "Memtize",
         description:
-            "Fund raising platform offering a decentralized and fully automated ecosystem where anyone can raise funds for anything. This platform supports charitable organizations and verified users! Otherwise it is all based on mutual trust.",
-        tags: ["Solidity", "Foundry", "React", "Next.js", "TypeScript", "Tailwind"],
-        imageUrl: vdr,
-        href: "https://virtual-dream-raiser.vercel.app/",
+            "An engine written in Solidity that automates the asset listing process on decentralized exchanges, ensuring seamless and efficient creation of liquidity pools, including protection from rug pulls.",
+        tags: ["Solidity", "Foundry", "Remix", "Makefile", "Uniswap"],
+        imageUrl: memtize,
+        href: "https://github.com/Nlferu/memtize-engine",
     },
     {
         title: "Digital Rights Maykr",
@@ -52,12 +53,12 @@ export const projectsData = [
         href: "https://digital-rights-maykr.vercel.app/",
     },
     {
-        title: "NFR Stablecoin",
+        title: "Virtual Dream Raiser",
         description:
-            "Digital currency designed for stability and reliability. It's anchored to $1.00, ensuring a consistent value. Stability is maintained through an algorithmic approach, making it decentralized and trustworthy with implemented exogenous collateral.",
-        tags: ["Solidity", "Foundry", "Remix", "Makefile"],
-        imageUrl: nfr,
-        href: "https://github.com/Neftyr/NFR-DeFi-Stablecoin",
+            "Fund raising platform offering a decentralized and fully automated ecosystem where anyone can raise funds for anything. This platform supports charitable organizations and verified users! Otherwise it is all based on mutual trust.",
+        tags: ["Solidity", "Foundry", "React", "Next.js", "TypeScript", "Tailwind"],
+        imageUrl: vdr,
+        href: "https://virtual-dream-raiser.vercel.app/",
     },
     {
         title: "Abstract Impulse NFT",
@@ -75,6 +76,12 @@ export const skillsData = [
         imageUrl: "/icons/solidity.png",
         href: "https://docs.soliditylang.org",
         width: 55,
+    },
+    {
+        title: "Rust",
+        imageUrl: "/icons/rust.png",
+        href: "https://www.rust-lang.org/",
+        width: 53,
     },
     {
         title: "Python",
@@ -105,6 +112,12 @@ export const skillsData = [
         imageUrl: "/icons/java.svg",
         href: "https://www.java.com",
         width: 40,
+    },
+    {
+        title: "MySQL",
+        imageUrl: "/icons/mysql.png",
+        href: "https://www.mysql.com/",
+        width: 60,
     },
     {
         title: "HTML",
@@ -158,7 +171,7 @@ export const skillsData = [
         title: "Foundry",
         imageUrl: "/icons/foundry.png",
         href: "https://github.com/foundry-rs",
-        width: 40,
+        width: 43,
     },
     {
         title: "Hardhat",
@@ -218,16 +231,24 @@ export const experienceData = [
     {
         title: "Senior Specialist Operations Department",
         location: "Brown Brothers Harriman",
-        description: "Currently I'm working as senior specialist managing fund mergers, client onboardings and transfers of securities into custody.",
+        description: "I was working as senior specialist managing fund mergers, client onboardings and transfers of securities into custody.",
         icon: React.createElement(CgWorkAlt),
-        date: "2020 - present",
+        date: "2020 - 2024",
     },
     {
-        title: "Full-Stack Developer",
+        title: "Freelance Full-Stack Developer",
         location: "Krakow, Poland",
         description:
-            "I am also a full-stack developer working as a freelancer. My stack includes Solidity, Python, JavaScript, MQL5, React, Next.js, and more. I am open to full-time opportunities.",
+            "As a freelance full-stack developer, I build Web 3.0 applications from start to finish, as well as trading bots and indicators for the Forex market. My tech stack includes Solidity, Rust, Python, TypeScript, MQL5, React, Next.js, and more.",
         icon: React.createElement(FaReact),
-        date: "2020 - present",
+        date: "2020 - 2024",
+    },
+    {
+        title: "Blockchain Engineer",
+        location: "Pieces.Market",
+        description:
+            "As a Blockchain Engineer at pieces.market, I leverage my extensive knowledge and experience in programming with Solidity, Node.js, and MySQL to develop and deploy smart contracts, establish automated tests, and manage smart contracts lifecycle.",
+        icon: React.createElement(SiSolidity),
+        date: "2024 - present",
     },
 ] as const
