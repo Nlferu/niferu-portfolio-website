@@ -16,7 +16,7 @@ export default function EmailContactForm({ message, senderEmail }: ContactFormEm
                 <Body className="bg-gray-100 text-black">
                     <Container>
                         <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
-                            <Heading className="leading-tight">Message from Neftyr contact form</Heading>
+                            <Heading className="leading-tight">Message from Niferu contact form</Heading>
                             <Text>{message}</Text>
                             <Hr />
                             <Text>The sender's email is: {senderEmail}</Text>
