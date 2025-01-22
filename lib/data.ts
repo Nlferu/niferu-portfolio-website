@@ -231,7 +231,8 @@ export const experienceData = [
     {
         title: "Senior Specialist Operations Department",
         location: "Brown Brothers Harriman",
-        description: "I was working as senior specialist managing fund mergers, client onboardings and transfers of securities into custody.",
+        description:
+            "As a Senior Operations Specialist I was working on fund mergers, client onboardings and transfers of securities into custody for clients over whole globe.",
         icon: React.createElement(CgWorkAlt),
         date: "2020 - 2024",
     },
@@ -244,10 +245,10 @@ export const experienceData = [
         date: "2020 - 2024",
     },
     {
-        title: "Blockchain Engineer",
+        title: "Senior Blockchain And Backend Engineer",
         location: "Pieces.Market",
         description:
-            "As a Blockchain Engineer at pieces.market, I leverage my extensive knowledge and experience in programming with Solidity, Node.js, and MySQL to develop and deploy smart contracts, establish automated tests, and manage smart contracts lifecycle.",
+            "As a Senior Blockchain and Backend Engineer, I leverage my expertise in Solidity, Node.js, and MySQL to develop and optimize smart contracts, implement cross-chain functionality, design scalable backend systems, and seamlessly integrate blockchain with databases, APIs, and the frontend, contributing to its development.",
         icon: React.createElement(SiSolidity),
         date: "2024 - present",
     },
