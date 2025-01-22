@@ -16,7 +16,7 @@ export default function Intro() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
     return (
-        <section className={"max-w-[51rem] text-center sm:mb-0 scroll-mt-[100rem]"} ref={ref} id="home">
+        <section className={"max-w-[55rem] text-center sm:mb-0 scroll-mt-[100rem]"} ref={ref} id="home">
             <div className="flex items-center justify-center py-[1rem]">
                 <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.3 }}>
                     <Image
@@ -36,8 +36,9 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                Hello, I&apos;m Patryk, a <span className="text-darklord dark:text-main underline decoration-2 underline-offset-2">blockchain developer</span>{" "}
-                with extensive full-stack experience and vast
+                Hello, I&apos;m Patryk, a{" "}
+                <span className="text-darklord dark:text-main underline decoration-2 underline-offset-2">blockchain and backend developer</span> with extensive
+                full-stack experience and vast
                 <span className="block ml-[0.5rem]">
                     knowledge in fields like
                     <Typed
