@@ -4,15 +4,8 @@ https://niferu.vercel.app/
 
 ## FULL-STACK DEVELOPER
 
-With over 8 years experience in finance industry by working
-for some of the top American banks in investment sector and
-trading various markets on my own.
-Since mid of 2020 I have
-started my programming journey from taking beginner Java
-course, after which I moved into programming trading bots
-and indicators for forex market. My next step was delving into
-the exciting world of blockchain technology, exploring its
-endless possibilities since early 2022 until now.
+With over eight years of experience in the finance industry, including working for top American banks in the investment sector and trading various markets independently, I developed a strong interest in trading diverse assets like stocks, crypto, and futures. This passion pushed me to learn programming so I could test and automate my trading ideas. The ability to quickly validate my strategies using code made me fall in love with programming.
+
 I am highly motivated, self-driven, and detail-oriented.
 
 ### Technologies Used
