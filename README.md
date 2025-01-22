@@ -4,7 +4,7 @@ https://niferu.vercel.app/
 
 ## FULL-STACK DEVELOPER
 
-I've spent past 7 years mastering finance industry by working
+With over 8 years experience in finance industry by working
 for some of the top American banks in investment sector and
 trading various markets on my own.
 Since mid of 2020 I have
